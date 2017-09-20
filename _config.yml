@@ -1,0 +1,15 @@
+name: Terracoin
+description: Terracoin, a new way to think currency
+keywords: "terracoin, trc, cryptocurrency"
+baseurl: ""
+url: "terracoin.info"
+
+markdown: kramdown
+
+# Kramdown was using smart quotes, which messes up CLI examples
+# TODO: smart quotes are actually quite pretty, so this is perhaps better handled via a plugin that reverts them for CLI blocks
+kramdown:
+    smart_quotes: ["apos", "apos", "quot", "quot"]
+    input: GFM
+
+exclude: ["README.md"]
