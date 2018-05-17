@@ -1,29 +1,66 @@
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Terracoin</title>
-        <meta name="description" content="Terracoin is a secure, innovative, flexible, and easy cryptocurrency.">
-        
-        <link rel="stylesheet" href="css/custom.css">
-        
-        <link rel="canonical" href="http://www.terracoin.info/">
-        <link rel="alternate" title="Terracoin is a secure, innovative, flexible, and easy cryptocurrency." href="http://www.terracoin.info/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0.25">
 
-        <meta property="og:title" content="Terracoin">
-        <meta property="og:url" content="http://www.terracoin.info/">
-        <meta property="og:type" content="website">
-        <meta property="og:description" content="Terracoin is a secure, innovative, flexible, and easy cryptocurrency.">
-        <meta property="og:image" content="http://www.terracoin.info/img/terracoin-logo.png">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title[page.lang] | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}">
 
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:image" content="http://www.terracoin.info/img/terracoin-logo.png">
-        <meta name="twitter:title" content="Terracoin">
-        <meta name="twitter:description" content="Terracoin is a secure, innovative, flexible, and easy cryptocurrency.">
-        
-        <link rel="shortcut icon" href="/favicon-32x32.png">
+  <meta name="copyright" content="© 2018 Terracoin Foundation">
+  <meta name="msapplication-tilecolor" content="#ffffff">
+  <meta name="msapplication-tileimage" content="{{ "/mstile-144x144.png" | prepend: site.url }}">
+  <meta name="theme-color" content="#ffffff">
+  
+  <link href="{{ "/apple-touch-icon.png" | prepend: site.url }}" rel="apple-touch-icon" sizes="180x180">
+  <link href="{{ "/favicon-32x32.png" | prepend: site.url }}" rel="icon" sizes="32x32" type="image/png">
+  <link href="{{ "/android-chrome-192x192.png" | prepend: site.url }}" rel="icon" sizes="192x192" type="image/png">
+  <link href="{{ "/favicon-16x16.png" | prepend: site.url }}" rel="icon" sizes="16x16" type="image/png">
+  <link href="{{ "/manifest.json" | prepend: site.url }}" rel="manifest">
+  <link href="{{ "/safari-pinned-tab.svg" | prepend: site.url }}" rel="mask-icon" color="#0e8843">
+  <link href="{{ "/favicon.ico" | prepend: site.url }}" rel="shortcut icon" type="image/vnd.microsoft.icon">
 
-        <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon/180x180.png">
-        <link rel="icon" href="/img/apple-touch-icon/180x180.png">
-        
-    </head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ "/css/common.css" | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ "/css/footer.css" | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ "/css/nav.css" | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ "/css/pages.css" | prepend: site.url }}">
+  <link rel="canonical" href="{{ site.index[page.lang] | replace:'index.html','' | prepend: site.url }}">
+  {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}{% for post in posts %}
+  <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" />{% endfor %}
+  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}{% for page in pages %}
+  <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />{% endfor %}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title[page.lang] }}" href="{{ site.feed[page.lang] | prepend: site.url | prepend: site.url }}">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-110087859-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-110087859-1');
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.1/vivus.min.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://webfonts.creativecloud.com/c/d1b2bd/1w;electrolize,2,WfH:W:n4;montserrat,2,2cm5Ph:W:n4/d" media="all">
+  <script src="https://webfonts.creativecloud.com/electrolize:n4:default;montserrat:n4:default.js" type="text/javascript"></script>
+  {% if page.ref == 'trc-vitals' %}
+  <script src="{{ "/js/vitals.js" | prepend: site.url }}" type="text/javascript"></script>
+  <script src="https://code.highcharts.com/highcharts.js" type="text/javascript"></script>
+  {% endif %}
+  <script type="text/javascript">
+  {% if page.ref == 'exchanges' %}
+    {% assign count=0 %}
+    {% assign hexitems="" %}
+    {% for exchange in site.data.exchanges %}
+{% capture hexitems %}{{ hexitems }} {{ count }}:[ '<img alt="{{ exchange.icon }}" src="{{ site.url }}/media/exchanges/{{ exchange.icon }}.png">', '{{ exchange.url }}' ],{% endcapture %}
+      {% assign count=count | plus: 1 %}
+    {% endfor %}
+    var hexitems = { {{ hexitems }} };
+  {% else %}
+    var hexitems = { {{ page.menu }} };
+  {% endif %}
+    var headlines = [ {{ page.headlines }} ];
+  </script>
+</head>

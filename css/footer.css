@@ -1,0 +1,104 @@
+footer {
+    height: 180px;
+    width: 100%;
+    background-color: #3E3E3E;
+    padding-top: 37px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    position: relative;
+    margin-right: auto;
+}
+
+footer > div {
+    display: table;
+    margin: 0 auto;
+}
+
+footer > div > div {
+    width: 100%;
+}
+
+footer .social_btn {
+    width: 63px;
+    height: 63px;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-width: 1px;
+    border-color: #2B2B2B;
+    border-radius: 200px;
+    background: transparent no-repeat center top;
+    background-size: cover;
+    border-width: 2px;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    border-style: solid;
+    border-color: #8C8C8C;
+    filter: alpha(opacity=100);
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    opacity: 1;
+}
+
+footer .social_btn:hover {
+    background-position: center bottom;
+    border-color: #FF3F18;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .reddit {
+    background: transparent url("../media/social/reddit.svg") no-repeat center top;
+    background-size: cover;
+}
+
+footer .fb.social_btn:hover {
+    border-color: #4C78BF;
+}
+footer .fb {
+    background: transparent url("../media/social/fb.svg") no-repeat center top;
+    background-size: cover;
+}
+
+footer .twitter.social_btn:hover {
+    border-color: #00C7FF;
+}
+footer .twitter {
+    background: transparent url("../media/social/twitter.svg") no-repeat center top;
+    background-size: cover;
+}
+
+footer .github.social_btn:hover {
+    border-color: #6CC644;
+}
+footer .github {
+    background: transparent url("../media/social/github.svg") no-repeat center top;
+    background-size: cover;
+}
+
+footer .youtube {
+    background: transparent url("../media/social/youtube.svg") no-repeat center top;
+    background-size: cover;
+}
+
+footer .copyright-container {
+    background-color: transparent;
+    font-size: 18px;
+    max-width: 100000px;
+    text-align: center;
+    font-family: Trebuchet, Trebuchet MS, Tahoma, Arial, sans-serif;
+    border-color: transparent;
+    line-height: 22px;
+}
+
+footer .copyright-container a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer .copyright-container a:hover {
+    color: #0E8843;
+}

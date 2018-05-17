@@ -1,0 +1,127 @@
+---
+layout: team
+---
+{% include default-top.html %}
+
+<div id="team" class="menu-anchor"></div>
+<div class="page-section team-section1">
+    <h3>{{ page.team }}</h3>
+    <br>
+    <br>
+    <div class="center">
+        <p class="small">{{ page.foundation_blurb }}</p>
+    </div>
+    <br>
+    <br>
+    <fieldset>
+        <legend>{{ page.foundation }}</legend>
+        <div class="center">
+{% for member in site.data.trcf %}
+    {% assign member_image = '/media/members/nopic.jpg' %}
+    {% assign static_images = site.static_files | where: 'extname', '.jpg' %}
+    {% for static_image in static_images %}
+        {% if static_image.path contains member.mattermost | append: '.jpg' | prepend: '/media/members/' %}
+            {% assign member_image = static_image.path %}
+        {% endif %}
+    {% endfor %}
+            <div class="member_container">
+                <div class="member">
+                    <div class="frame">
+                        <img src="{{ member_image | prepend: site.url }}" alt="{{ member.mattermost }}">
+                    </div>
+                    <div class="memberinfo">
+                        <div class="membername">
+                            <h4>{{ member.name }}</h4>
+                        </div>
+                        <p class="membertitle">{{ member.position }}</p>
+                        <br>
+                        <p>{{ page.mattermost }} - @{{ member.mattermost }}</p>
+    {% if member.twitter %}
+                        <p>{{ page.twitter }} - <a target="_blank" href="https://twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a></p>
+    {% endif %}
+                    </div>
+                </div>
+            </div>
+{% endfor %}
+        </div>
+    </fieldset>
+</div>
+<div class="page-section team-section2">
+    <div class="center a2">
+        <h4>{{ page.team_cont }}</h4>
+    </div>
+    <br>
+        <div class="center">
+{% for member in site.data.team %}
+    {% assign member_image = '/media/members/nopic.jpg' %}
+    {% assign static_images = site.static_files | where: 'extname', '.jpg' %}
+    {% for static_image in static_images %}
+        {% if static_image.path contains member.mattermost | append: '.jpg' | prepend: '/media/members/' %}
+            {% assign member_image = static_image.path %}
+        {% endif %}
+    {% endfor %}
+            <div class="member_container">
+                <div class="member">
+                    <div class="frame">
+                        <img src="{{ member_image | prepend: site.url }}" alt="{{ member.mattermost }}">
+                    </div>
+                    <div class="memberinfo">
+                        <div class="membername">
+                            <h4>{{ member.name }}</h4>
+                        </div>
+                        <p class="membertitle">{{ member.position }}</p>
+                        <br>
+                        <p>{{ page.mattermost }} - @{{ member.mattermost }}</p>
+    {% if member.twitter %}
+                        <p>{{ page.twitter }} - <a target="_blank" href="https://twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a></p>
+    {% endif %}
+                    </div>
+                </div>
+            </div>
+{% endfor %}
+        </div>
+</div>
+
+<div id="translator" class="menu-anchor"></div>
+<div class="page-section team-section3">
+    <h3>{{ page.translators }}</h3>
+    <br>
+    <br>
+    <div class="center">
+        <p class="small">{{ page.translators_blurb }}</p>
+        <br>
+        <br>
+        <h4>{{ page.translators_how }}</h4>
+        <br>
+        <div class="center">
+            <span class="helpbtn">
+                <span>
+                    <a target="_blank" href="https://help.github.com/articles/creating-a-pull-request/">
+                        <button>{{ page.helpus }}</button>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div id="join" class="menu-anchor"></div>
+<div class="page-section team-section4 center">
+    <h3>{{ page.join }}</h3>
+    <br>
+    <br>
+    <div class="center">
+        <p class="small">{{ page.join_blurb }}</p>
+        <br>
+        <div class="center">
+	    <form method="post" action="scripts/apply.php">
+                <input type="text" spellcheck="false" name="name" tabindex="1" placeholder="{{ page.join_form_name }}">
+                <input type="email" spellcheck="false" name="email" tabindex="2" placeholder="{{ page.join_form_email }}">
+                <textarea name="message" tabindex="3" placeholder="{{ page.join_form_message }}"></textarea>
+	        <input type="submit" value="Submit" tabindex="4">
+            </form>
+        </div>
+    </div>
+</div>
+
+{% include default-bottom.html %}

@@ -1,0 +1,65 @@
+<div id="topnav" class="clearfix">
+    <div>
+        <a href="{{ site.index[page.lang] | replace:'index.html','' | prepend: site.url }}">
+            <div id="logo_container" class="clearfix group">
+                <div id="logo" class="group clip">
+                    <img class="svg" alt="Terracoin Logo" src="{{ site.url }}/media/logo_colour-01.svg">
+                </div>
+            </div>
+        </a>
+
+        <nav class="MenuBar clearfix group" data-sizepolicy="fixed" data-pintopage="page_fluidx">
+{% assign pages=site.pages | where:"lang", page.lang | sort:"order" %}
+{% for my_page in pages %}
+    {% if my_page.title %}
+        {% assign class = "" %}
+        {% if page.url == my_page.url %}
+            {% assign class = "MenuActive " %}
+        {% endif %} 
+            <div class="MenuItemContainer clearfix group">
+                <a class="{{ class }}clearfix colelem" href="{{ my_page.url | prepend: site.url }}">
+                    <div class="clearfix group" data-sizepolicy="fixed" data-pintopage="page_fixedLeft">
+                        <p>{{ my_page.title }}</p>
+                    </div>
+                </a>
+            </div>
+    {% endif %}
+{% endfor %}
+            <div class="LangBar">{{ site.language[page.lang] }}:
+                <select id="langselector">
+{% assign pages=site.pages | where:"ref", 'index' | sort: 'lang' %}
+{% for my_page in pages %}
+    {% assign selected='' %}
+    {% if page.lang == my_page.lang %}
+        {% assign selected=' selected="selected"' %}
+    {% endif %} 
+                <option value="{{ my_page.url | prepend: site.url }}"{{ selected }}>
+                    {{ site.langs[my_page.lang] }}
+                </option>
+{% endfor %}
+            </select>
+        </nav>
+    </div>
+</div>
+
+
+<div id="twitterfeed" class="sidenav">
+    <a data-class="popup" class="network-label twitter" data-network="twitter" href="#">News</a>
+    <div>
+        <i class="fab fa-twitter fa-2x"></i>
+    </div>
+</div>
+<a href="#pagenav" class="scrollto">
+    <div id="totop" class="sidenav">
+        <div>
+            <i class="fa fa-caret-up fa-2x"></i><br>
+            {{ site.top[page.lang] }}
+        </div>
+    </div>
+</a>
+
+<div id="widgetpane">
+    <div id="twitterpane">
+        <a class="twitter-timeline" data-dnt="true" data-theme="dark" data-link-color="#0e8843" href="https://twitter.com/Terracoin_TRC?ref_src=twsrc%5Etfw"></a>
+    </div>
+</div>

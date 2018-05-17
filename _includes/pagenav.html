@@ -1,0 +1,39 @@
+<div id="pagenav" class="{{ page.bgclass }}">
+    <div id="hexnav">
+        <div style="float: right;">
+        <div class="hex-row">
+            <div class="unihex"></div>
+            <div class="unihex"></div>
+            <div class="unihex"></div>
+            <div class="unihex"></div>
+        </div>
+        <div class="hex-row even">
+            <div class="unihex"></div>
+            <div class="unihex"></div>
+            <div class="unihex"></div>
+        </div>
+        </div>
+        <div id="headlines-spacer"></div>
+        <div style="float: left; position: absolute;">
+        <div class="hex-row">
+            <div class="unihex"></div>
+            <div class="unihex"></div>
+            <div class="unihex"></div>
+            <div class="unihex"></div>
+        </div>
+        <div class="hex-row even">
+            <div class="unihex"></div>
+            <div class="unihex"></div>
+            <div class="unihex"></div>
+        </div>
+        </div>
+    </div>
+{% if page.ref == 'team' %}
+    {% include newsletter.html %}
+{% endif %}
+{% if page.extra %}
+    <div id="pagenav_extra">{{ page.extra }}</div>
+{% endif %}
+</div>
+
+<div id="headlines"></div>

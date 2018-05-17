@@ -1,0 +1,183 @@
+---
+layout: resources
+---
+{% include default-top.html %}
+
+<div id="social" class="menu-anchor"></div>
+<div class="page-section resources-section1">
+    <h3>{{ page.social }}</h3>
+    <br>
+    <div class="center">
+{% for data in site.data.res_social %}
+        <div class="res_button_container">
+            <a class="res_button" href="{{ data.url }}">
+                <div class="table {{ data.class }}" style="background-image: url({{ '/media/res_social/' | append: data.icon | prepend: site.url }});">
+                    <div class="cell">
+                        <p>{{ data.name }}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+{% endfor %}
+    </div>
+    <br>
+    <div class="center">
+        <p class="small">{{ page.social_blurb }}</p>
+    </div>
+</div>
+
+<div id="news" class="menu-anchor"></div>
+<div class="page-section resources-section2">
+    <h3>{{ page.news }}</h3>
+    <br>
+    <div class="center">
+{% for data in site.data.res_news %}
+        <div class="res_button_container">
+            <a class="res_button" href="{{ data.url }}">
+                <div class="table {{ data.class }}" style="background-image: url({{ '/media/res_social/' | append: data.icon | prepend: site.url }});">
+                    <div class="cell">
+                        <p>{{ data.name }}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+{% endfor %}
+    </div>
+    <br>
+    <div class="center">
+        <p class="small">{{ page.news_blurb }}</p>
+    </div>
+</div>
+
+<div id="discussion" class="menu-anchor"></div>
+<div class="page-section resources-section3">
+    <h3>{{ page.discussion }}</h3>
+    <br>
+    <div class="center">
+{% for data in site.data.res_discussion %}
+        <div class="res_button_container">
+            <a class="res_button" href="{{ data.url }}">
+                <div class="table {{ data.class }}" style="background-image: url({{ '/media/res_social/' | append: data.icon | prepend: site.url }});">
+                    <div class="cell">
+                        <p>{{ data.name }}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+{% endfor %}
+    </div>
+    <br>
+    <div class="center">
+        <p class="small">{{ page.discussion_blurb }}</p>
+    </div>
+</div>
+
+<div id="technical" class="menu-anchor"></div>
+<div class="page-section resources-section4">
+    <h3>{{ page.technical }}</h3>
+    <br>
+    <div class="center">
+        <div class="res_container">
+            <a class="res_icon" target="_blank" href="https://services.terracoin.io/donationservers">
+                <div>
+                    <img class="svg" alt="Donation Servers" src="{{ '/media/res_tech/master_donate.svg' | prepend: site.url }}">
+                </div>
+            </a>
+            <div>
+                <p class="small">{{ page.donationservers }}</p>
+            </div>
+        </div>
+        <div class="res_container">
+            <a class="res_icon" target="_blank" href="https://insight.terracoin.io/">
+                <div>
+                    <img class="svg" alt="Explorer" src="{{ '/media/res_tech/block_explorer.svg' | prepend: site.url }}">
+                </div>
+            </a>
+            <div>
+                <p class="small">{{ page.explorer }}</p>
+            </div>
+        </div>
+        <div class="res_container">
+            <a class="res_icon" target="_blank" href="https://www.kiva.org/team/terracoin">
+                <div>
+                    <img class="svg" alt="KIVA" src="{{ '/media/res_tech/kiva_logo-01.svg' | prepend: site.url }}">
+                </div>
+            </a>
+            <div>
+                <p class="small">{{ page.kiva }}</p>
+            </div>
+        </div>
+        <div class="res_container">
+            <a class="res_icon" target="_blank" href="https://overview.terracoin.io/blocks.html">
+                <div>
+                    <img class="svg" alt="Masternodes" src="{{ '/media/res_tech/masternode.svg' | prepend: site.url }}">
+                </div>
+            </a>
+            <div>
+                <p class="small">{{ page.masternodes }}</p>
+            </div>
+        </div>
+        <div class="res_container">
+            <a class="res_icon" target="_blank" href="https://services.terracoin.io/">
+                <div>
+                    <img class="svg" alt="Proposals" src="{{ '/media/res_tech/proposal-01.svg' | prepend: site.url }}">
+                </div>
+            </a>
+            <div>
+                <p class="small">{{ page.services }}</p>
+            </div>
+        </div>
+        <div class="res_container">
+            <a class="res_icon" target="_blank" href="https://wiki.terracoin.io/view/Whitepaper">
+                <div>
+                    <img class="svg" alt="White Paper" src="{{ '/media/res_tech/white_paper-01.svg' | prepend: site.url }}">
+                </div>
+            </a>
+            <div>
+                <p class="small">{{ page.whitepaper }}</p>
+            </div>
+        </div>
+        <div class="res_container">
+            <a class="res_icon" target="_blank" href="https://wiki.terracoin.io/">
+                <div>
+                    <img class="svg" alt="Wiki" src="{{ '/media/res_tech/wiki-01.svg' | prepend: site.url }}">
+                </div>
+            </a>
+            <div>
+                <p class="small">{{ page.wiki }}</p>
+            </div>
+        </div>
+        <div class="res_container">
+            <a class="res_icon" target="_blank" href="https://walletgenerator.net/?currency=Terracoin">
+                <div>
+                    <img class="svg" alt="Paper Wallet" src="{{ '/media/res_tech/paper_wallet-01.svg' | prepend: site.url }}">
+                </div>
+            </a>
+            <div>
+                <p class="small">{{ page.paperwallet }}</p>
+            </div>
+        </div>
+        <div class="res_container">
+            <a class="res_icon" target="_blank" href="https://github.com/u3mur4/terracoin">
+                <div>
+                    <img class="svg" alt="Easy" src="{{ '/media/res_tech/easy_btn-01.svg' | prepend: site.url }}">
+                </div>
+            </a>
+            <div>
+                <p class="small">{{ page.setup }}</p>
+            </div>
+        </div>
+    </div>
+    <div id="node"></div>
+    <br>
+    <br>
+    <div class="center">
+        <h4>{{ page.node_hosting }}</h4>
+	<br>
+{% for data in site.data.hosting %}
+        <a class="small" target="_blank" href="{{ data.link }}">{{ data.name }}</a><br>
+{% endfor %}
+    </div>
+</div>
+
+{% include default-bottom.html %}

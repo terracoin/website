@@ -1,15 +1,80 @@
-name: Terracoin
-description: Terracoin, a new way to think currency
-keywords: "terracoin, trc, cryptocurrency"
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title:
+  en: Terracoin
+  fr: Terracoin
+
+email: support@terracoin.io
+
+description:
+  en: Terracoin is a secure, innovative, flexible, and easy cryptocurrency.
+  fr:
+  fi:
+
+copyright:
+  en: Copyright &copy; 2018 <a href="https://terracoin.io/">Terracoin</a>
+  fr: Droits d'auteur &copy; 2018 <a href="https://terracoin.io/">Terracoin</a>
+  fi: Tekijänoikeus &copy; 2018 <a href="https://terracoin.io/">Terracoin</a>
+
+index:
+  en: /index.html
+  fr: /accueil.html
+  fi: /etusivu.html
+
+feed:
+  en: /feed.xml
+  fr: /flux.xml
+  fi: /rehu.xml
+
+top:
+  en: Top
+  fr: Haut
+  fi: Ylin
+
+language:
+  en: Language
+  fr: Langage
+  fi: Kieli
+
+langs:
+  en: English
+  fr: Français
+  fi: Suomalainen
+
+newsletter_form_subscribe:
+  en: Subscribe
+  fr:
+  fi:
+
+newsletter_form_email:
+  en: your email
+  fr:
+  fi:
+
+newsletter_form_enroll:
+  en: Enroll
+  fr:
+  fi:
+
+scrolldown:
+  en: Scroll down
+  fr:
+  fi:
+
 baseurl: ""
-url: "terracoin.info"
+trcver: 0.12.1
 
+url: "https://terracoin.io"
+
+twitter_username: jekyllrb
+
+github_username:  jekyll
+
+# Build settings
 markdown: kramdown
-
-# Kramdown was using smart quotes, which messes up CLI examples
-# TODO: smart quotes are actually quite pretty, so this is perhaps better handled via a plugin that reverts them for CLI blocks
-kramdown:
-    smart_quotes: ["apos", "apos", "quot", "quot"]
-    input: GFM
-
-exclude: ["README.md"]

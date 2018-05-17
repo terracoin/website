@@ -1,0 +1,133 @@
+---
+layout: home
+---
+{% include default-top.html %}
+
+<div id="what" class="menu-anchor"></div>
+<div class="page-section home-section1">
+    <div>
+        <h3>{{ page.what }} <img class="svg" alt="Terracoin" src="{{ site.url }}/media/terracoin_v2.png"></h3>
+        <p>{{ page.created }}</p>
+        <ul>
+{% for point in page.points %}
+            <li>{{ point }}</li>
+{% endfor %}
+        </ul>
+    </div>
+</div>
+
+<div id="mission" class="menu-anchor"></div>
+<div class="page-section home-section2">
+    <h3>{{ page.mission }}</h3>
+    <br>
+    <p class="center">{{ page.mission_blurb }}</p>
+    <br>
+    <div class="table">
+        <div class="cell center">
+            <div id="svg-lander" class="svg mt-svg-obj"></div>
+            <script>
+                var svgu44031 = new Vivus('svg-lander', {
+                    file: 'media/lander.svg',
+                    type: 'delayed',
+                    start: 'inViewport',
+                    duration: 200,
+                    delay: 50,
+                    pathTimingFunction: Vivus.LINEAR,
+                    animTimingFunction: Vivus.LINEAR,
+                    dashGap: 2
+                }, function (obj) {
+                    document.getElementById('svg-lander').classList.add('svg-animated');
+                });
+            </script>
+        </div>
+        <div class="cell center">
+            <div id="svg-comet" class="svg mt-svg-obj"></div>
+            <script>
+                var svgu44032 = new Vivus('svg-comet', {
+                    file: 'media/comet.svg',
+                    type: 'delayed',
+                    start: 'inViewport',
+                    duration: 200,
+                    delay: 50,
+                    pathTimingFunction: Vivus.LINEAR,
+                    animTimingFunction: Vivus.LINEAR,
+                    dashGap: 2
+                }, function (obj) {
+                    document.getElementById('svg-comet').classList.add('svg-animated');
+                });
+            </script>
+        </div>
+        <div class="cell center">
+            <div id="svg-donation" class="svg mt-svg-obj"></div>
+            <script>
+                var svgu44033 = new Vivus('svg-donation', {
+                    file: 'media/donation.svg',
+                    type: 'delayed',
+                    start: 'inViewport',
+                    duration: 200,
+                    delay: 50,
+                    pathTimingFunction: Vivus.LINEAR,
+                    animTimingFunction: Vivus.LINEAR,
+                    dashGap: 2
+                }, function (obj) {
+                    document.getElementById('svg-donation').classList.add('svg-animated');
+                });
+            </script>
+        </div>
+    </div>
+    <br>
+    <div class="table">
+        <div class="cell center bottom">
+            <div class="title">
+                <h4>{{ page.dgov }}</h4>
+            </div>
+        </div>
+        <div class="cell center bottom">
+            <div class="title">
+                <h4>{{ page.mn }}</h4>
+            </div>
+        </div>
+        <div class="cell center bottom">
+            <div class="title">
+                <h4>{{ page.donations }}</h4>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="table">
+        <div class="cell center">
+            <p class="small">{{ page.dgov_blurb }}</p>
+        </div>
+        <div class="cell center">
+            <p class="small">{{ page.mn_blurb }}</p>
+        </div>
+        <div class="cell center">
+            <p class="small">{{ page.donations_blurb }}</p>
+        </div>
+    </div>
+</div>
+
+<div id="downloads" class="menu-anchor"></div>
+<div class="page-section home-section3">
+    <h3>{{ page.downloads }}</h3>
+    <br>
+    <div class="table">
+        <div class="cell">
+          <p class="clearfix small">{{ page.downloads_blurb1 }}</p>
+	  <br>
+	  <p class="clearfix small">{{ page.downloads_blurb2 }}</p>
+        </div>
+        <div class="cell downloadcontainer">
+            <a class="downloadbutton" id="button-win" href="https://terracoin.io/bin/terracoin-core-current/terracoin-{{ site.trcver }}-win64-setup-unsigned.exe" target="_blank"><div class="clearfix group downloadtitle"><p>{{ page.windows }}</p><p>{{ page.64bit }}</p></div></a>
+	    <a class="downloadbutton" id="button-lin" href="https://terracoin.io/bin/terracoin-core-current/terracoin-{{ site.trcver }}-x86_64-linux-gnu.tar.gz" target="_blank"><div class="clearfix group downloadtitle"><p>{{ page.linux }}</p><p>{{ page.64bit }}</p></div></a>
+            <br>
+	    <a class="downloadbutton" id="button-mac" href="https://terracoin.io/bin/terracoin-core-current/terracoin-{{ site.trcver }}-osx-unsigned.dmg" target="_blank"><div class="clearfix group downloadtitle"><p>{{ page.osx }}</p><p>{{ page.osx_vers }}</p></div></a>
+        </div>
+    </div>
+    <br>
+    <div class="center">
+        <p class="clearfix small"><a target="_blank" href="https://terracoin.io/bin/terracoin-core-current/">{{ page.other_platforms }}</a></p>
+    </div>
+</div>
+
+{% include default-bottom.html %}

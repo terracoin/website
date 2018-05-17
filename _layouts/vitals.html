@@ -1,0 +1,187 @@
+---
+layout: vitals
+---
+{% include default-top.html %}
+
+<div id="health" class="menu-anchor"></div>
+<div class="page-section vitals-section1">
+    <h3>{{ page.what }}</h3>
+    <br>
+    <div>
+        <p>{{ page.what_blurb1 }}</p>
+        <br>
+        <ul class="small" style="padding: revert;">
+{% for point in page.what_points %}
+            <li>{{ point }}</li>
+{% endfor %}
+        </ul>
+        <br>
+	<p>{{ page.what_blurb2 }}</p>
+    </div>
+    <br>
+    <div class="center">
+        <div class="vital_container">
+            <a class="vital_icon" target="_blank" href="https://github.com/terracoin/terracoin/graphs/commit-activity">
+                <div>
+                    <img class="svg" alt="Development Team" src="{{ '/media/dev_team.svg' | prepend: site.url }}">
+                </div>
+            </a>
+            <div>
+                <p class="small">{{ page.codebase }}</p>
+            </div>
+	    <a class="large_green_btn" target="_blank" href="https://github.com/terracoin/terracoin/graphs/commit-activity">{{ page.more }}</a>
+        </div>
+        <div class="vital_container">
+            <a class="vital_icon" target="_blank" href="https://trello.com/b/3RJU8m6t/terracoin">
+                <div>
+                    <img class="svg" alt="Roadmap" src="{{ '/media/road.png' | prepend: site.url }}">
+                </div>
+            </a>
+            <div>
+                <p class="small">{{ page.roadmap }}</p>
+            </div>
+	    <a class="large_green_btn" target="_blank" href="https://trello.com/b/3RJU8m6t/terracoin">{{ page.more }}</a>
+        </div>
+        <div class="vital_container">
+            <a class="vital_icon" target="_blank" href="https://medium.com/@clockuniverse/">
+                <div>
+                    <img class="svg" alt="Transparency" src="{{ '/media/trans_parency-01.svg' | prepend: site.url }}">
+                </div>
+            </a>
+            <div>
+                <p class="small">{{ page.transparency }}</p>
+            </div>
+	    <a class="large_green_btn" target="_blank" href="https://medium.com/@clockuniverse/">{{ page.more }}</a>
+        </div>
+    </div>
+</div>
+
+<div class="page-section vitals-section2">
+    <h3>{{ page.details }}</h3>
+    <p class="subtext center">{{ page.datafrom }}</p>
+    <br>
+
+    <div id="live" class="menu-anchor"></div>
+    <div class="vitals-live">
+        <div class="clearfix">
+            <div class="clip group">
+                <img class="svg" alt="Terracoin Logo" src="{{ '/media/trc_logo_colour.svg' | prepend: site.url }}" style="height: 147px; padding-right: 20px;">
+            </div>
+            <div class="clearfix group">
+                <p class="vitals-title">{{ page.marketcap }}</p>
+                <p class="vitals-input capusd">...</p>
+            </div>
+        </div>
+        <div class="clearfix right">
+            <div class="clearfix group">
+                <p class="vitals-title">{{ page.rank }}</p>
+                <p class="vitals-input rank">...</p>
+            </div>
+        </div>
+	<div class="exchange_table">
+            <table class="center">
+                <thead>
+                    <tr>
+                        <th><p>{{ page.exchange }}</p></th>
+                        <th><p>{{ page.volume24h }}</p></th>
+                        <th><p>{{ page.price }}</p></th>
+                        <th><p>{{ page.volume }}</p></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><p>{{ page.cryptopia }}</p></td>
+                        <td><p class="cryptopia_vol">...</p></td>
+                        <td><p class="cryptopia_usd">...</p></td>
+                        <td><p class="cryptopia_per">...</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>{{ page.ccex }}</p></td>
+                        <td><p class="ccex_vol">...</p></td>
+                        <td><p class="ccex_usd">...</p></td>
+                        <td><p class="ccex_per">...</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>{{ page.coinexchange }}</p></td>
+                        <td><p class="coinexchange_vol">...</p></td>
+                        <td><p class="coinexchange_usd">...</p></td>
+                        <td><p class="coinexchange_per">...</p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+    <div id="performance" class="menu-anchor"></div>
+    <div class="vitals-performance">
+        <p class="vitals-title">{{ page.performance }}</p>
+        <br>
+        <div id="highcharts-graph"></div>
+        <br>
+        <div style="display: inline-block; width: 100%; padding: 0 50px;">
+            <div class="clearfix group">
+                <p class="vitals-title">{{ page.usd }}</p>
+                <p class="vitals-input trcusd">...</p>
+            </div>
+            <div class="clearfix group" style="float: right;">
+                <p class="vitals-title">{{ page.btc }}</p>
+                <p class="vitals-input trcbtc">...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+    <div id="circulation" class="menu-anchor"></div>
+    <div class="vitals-circulation">
+        <p class="vitals-title">{{ page.circulation }}</p>
+        <br>
+        <br>
+        <br>
+        <div style="display: inline-block; width: 100%; padding: 0 50px;">
+            <div class="clearfix group">
+                <p class="vitals-title">{{ page.volume24h }}</p>
+                <p class="vitals-input volusd">...</p>
+            </div>
+            <div class="clearfix group" style="float: right;">
+                <p class="vitals-title">{{ page.circulating }}</p>
+                <p class="vitals-input supply">...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+    <div id="masternodes" class="menu-anchor"></div>
+    <div class="vitals-masternode">
+        <p class="vitals-title">{{ page.masternodes }}</p>
+        <br>
+        <div>
+            <div class="clearfix group">
+                <p class="vitals-title">{{ page.enabled }}</p>
+                <p class="vitals-input enabledmns">...</p>
+            </div>
+            <div class="clearfix group" style="float: right;">
+                <p class="vitals-title">{{ page.total }}</p>
+                <p class="vitals-input totalmns">...</p>
+            </div>
+        </div>
+        <br>
+        <p class="small center">{{ page.donation_blurb }}</p>
+        <br>
+        <div>
+            <div class="clearfix group">
+                <p class="vitals-title">{{ page.superblock }}</p>
+                <p class="vitals-input sbdate">...</p>
+                <p class="vitals-input sbtime">...</p>
+            </div>
+            <div class="clearfix group" style="float: right;">
+                <p class="vitals-title">{{ page.roi }}</p>
+                <p class="vitals-input mnroi">...</p>
+            </div>
+        </div>
+        <br>
+        <p class="center small">{{ page.mnmore }}</p>
+    </div>
+</div>
+
+{% include default-bottom.html %}
