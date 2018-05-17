@@ -9,6 +9,7 @@
 title:
   en: Terracoin
   fr: Terracoin
+  fi: Terracoin
 
 email: support@terracoin.io
 
@@ -25,7 +26,7 @@ copyright:
 index:
   en: /index.html
   fr: /accueil.html
-  fi: /etusivu.html
+  fi: /indeksi.html
 
 feed:
   en: /feed.xml
@@ -49,23 +50,23 @@ langs:
 
 newsletter_form_subscribe:
   en: Subscribe
-  fr:
-  fi:
+  fr: Souscrire
+  fi: Merkitä
 
 newsletter_form_email:
   en: your email
-  fr:
-  fi:
+  fr: votre email
+  fi: sähköpostisi
 
 newsletter_form_enroll:
   en: Enroll
-  fr:
-  fi:
+  fr: Inscrire
+  fi: Kirjoittautua
 
 scrolldown:
   en: Scroll down
-  fr:
-  fi:
+  fr: Défiler vers le bas
+  fi: Rullaa alas
 
 baseurl: ""
 trcver: 0.12.1
