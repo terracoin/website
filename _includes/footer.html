@@ -20,3 +20,16 @@
 
 <script src="{{ "/js/menus.js" | prepend: site.url }}" type="text/javascript"></script>
 <script src="{{ "/js/headlines.js" | prepend: site.url }}" type="text/javascript"></script>
+
+<script>
+    var siteurl = '{{ site.url }}';
+    var current_lang = '{{ page.lang }}';
+    var language = navigator.language || navigator.browserLanguage;
+    var default_lang = language.split('-')[0];
+    if (current_lang != default_lang) {
+        var langexists = 0 != $('#langselector option[data-lang=' + default_lang + ']').length;
+        var refmatch = new RegExp('^' + siteurl);
+        if (langexists && !refmatch.test(document.referrer))
+            window.location = $('#langselector option[data-lang=' + default_lang + ']').val();
+    }
+</script>

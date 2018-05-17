@@ -33,7 +33,7 @@
     {% if page.lang == my_page.lang %}
         {% assign selected=' selected="selected"' %}
     {% endif %} 
-                <option value="{{ my_page.url | prepend: site.url }}"{{ selected }}>
+                <option data-lang="{{ my_page.lang }}" value="{{ my_page.url | prepend: site.url }}"{{ selected }}>
                     {{ site.langs[my_page.lang] }}
                 </option>
 {% endfor %}
