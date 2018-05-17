@@ -27,7 +27,7 @@ layout: home
             <div id="svg-lander" class="svg mt-svg-obj"></div>
             <script>
                 var svgu44031 = new Vivus('svg-lander', {
-                    file: 'media/lander.svg',
+                    file: '{{ "/media/lander.svg" | prepend: site.url }}',
                     type: 'delayed',
                     start: 'inViewport',
                     duration: 200,
@@ -44,7 +44,7 @@ layout: home
             <div id="svg-comet" class="svg mt-svg-obj"></div>
             <script>
                 var svgu44032 = new Vivus('svg-comet', {
-                    file: 'media/comet.svg',
+                    file: '{{ "/media/comet.svg" | prepend: site.url }}',
                     type: 'delayed',
                     start: 'inViewport',
                     duration: 200,
@@ -61,7 +61,7 @@ layout: home
             <div id="svg-donation" class="svg mt-svg-obj"></div>
             <script>
                 var svgu44033 = new Vivus('svg-donation', {
-                    file: 'media/donation.svg',
+                    file: '{{ "/media/donation.svg" | prepend: site.url }}',
                     type: 'delayed',
                     start: 'inViewport',
                     duration: 200,
