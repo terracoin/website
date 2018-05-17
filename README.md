@@ -8,7 +8,9 @@ Please make a Pull Request, make sure you translate all the .html files in the r
 
 example: French
 - copy index.html -> acceuil.html
-- modify all the lines in acceuil.html bellow the marked line, and after the first : (collon) on each line.
+- modify all the lines in acceuil.html bellow the marked line, and after the first : (colon) on each line.
 - Make sure you do this for all htmls in the root
 - Add entries in _config.yml adding the lang, in this case fr: you'll see the lines that need it.
+- copy scripts/apply.en.php to scripts/apply.fr.php
+- translate scripts/apple.fr.php
 - make a Pull Request

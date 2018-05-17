@@ -114,7 +114,7 @@ layout: team
         <p class="small">{{ page.join_blurb }}</p>
         <br>
         <div class="center">
-	    <form method="post" action="scripts/apply.php">
+		<form method="post" action="{{ '/scripts/apply' | append: {{ page.lang }} | append '.php' | prepend: site.url }}">
                 <input type="text" spellcheck="false" name="name" tabindex="1" placeholder="{{ page.join_form_name }}">
                 <input type="email" spellcheck="false" name="email" tabindex="2" placeholder="{{ page.join_form_email }}">
                 <textarea name="message" tabindex="3" placeholder="{{ page.join_form_message }}"></textarea>
