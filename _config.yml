@@ -15,13 +15,13 @@ email: support@terracoin.io
 
 description:
   en: Terracoin is a secure, innovative, flexible, and easy cryptocurrency.
-  fr:
-  fi:
+  fr: Terracoin est une crypto-monnaie sécurisée, innovante, flexible et facile.
+  fi: Terracoin on turvallinen, innovatiivinen, joustava ja helppo kryptovaluutta.
 
 copyright:
   en: Copyright &copy; 2018 <a href="https://terracoin.io/">Terracoin</a>
   fr: Droits d'auteur &copy; 2018 <a href="https://terracoin.io/">Terracoin</a>
-  fi: Tekijänoikeus &copy; 2018 <a href="https://terracoin.io/">Terracoin</a>
+  fi: Tekijänoikeudet &copy; 2018 <a href="https://terracoin.io/">Terracoin</a>
 
 index:
   en: /index.html
@@ -31,7 +31,7 @@ index:
 feed:
   en: /feed.xml
   fr: /flux.xml
-  fi: /rehu.xml
+  fi: /syotto.xml
 
 top:
   en: Top
@@ -46,12 +46,12 @@ language:
 langs:
   en: English
   fr: Français
-  fi: Suomalainen
+  fi: Suomi
 
 newsletter_form_subscribe:
   en: Subscribe
   fr: Souscrire
-  fi: Merkitä
+  fi: Tilaa
 
 newsletter_form_email:
   en: your email
@@ -61,7 +61,7 @@ newsletter_form_email:
 newsletter_form_enroll:
   en: Enroll
   fr: Inscrire
-  fi: Kirjoittautua
+  fi: Osallistu
 
 scrolldown:
   en: Scroll down
