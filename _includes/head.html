@@ -6,7 +6,21 @@
   <title>{% if page.title %}{{ page.title | prepend: ' - ' | prepend: site.title[page.lang] | escape }}{% else %}{{ site.title[page.lang] | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}">
 
-  <meta name="copyright" content="© 2018 Terracoin Foundation">
+  <link rel="canonical" href="{{ site.url }}">
+  <link rel="alternate" title="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}" href="{{ site.url }}">
+
+  <meta property="og:title" content="{{ site.title[page.lang] }}">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="{{ site.description[page.lang] }}">
+  <meta property="og:image" content="{{ '/media/terracoin-logo.png' | prepend: site.url }}">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twttier:image" content="{{ '/media/terracoin-logo.png' | prepend: site.url }}">
+  <meta name="twitter:title" content="{{ site.title[page.lang] }}">
+  <meta name="twitter:description" content="{{ site.description[page.lang] }}">
+
+  <meta name="copyright" content="© 2016-2018 Terracoin Foundation">
   <meta name="msapplication-tilecolor" content="#ffffff">
   <meta name="msapplication-tileimage" content="{{ "/mstile-144x144.png" | prepend: site.url }}">
   <meta name="theme-color" content="#ffffff">
@@ -62,5 +76,16 @@
     var hexitems = { {{ page.menu }} };
   {% endif %}
     var headlines = [ {{ page.headlines }} ];
+  </script>
+  <script>
+        {
+          "@context": "http://www.schema.org",
+          "@id": "{{ site.url }}",
+          "@type": "WebSite",
+          "name": "{{ site.title[page.lang] }}"
+          "url": "{{ site.url }}",
+          "description": "{{ site.description[page.lang] }}",
+          "logo": "{{ '/media/terracoin-logo.png' | prepend: site.url }}"
+        }
   </script>
 </head>
