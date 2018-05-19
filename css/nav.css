@@ -161,6 +161,10 @@
     padding-bottom: 14px;
     position: fixed;
     top: 0px;
+    -webkit-box-shadow: 0 0 5px 1px #000;
+    -moz-box-shadow: 0 0 5px 1px #000;
+    -o-box-shadow: 0 0 5px 1px #000;
+    box-shadow: 0 0 5px 1px #000;
 }
 
 #topnav>div {
