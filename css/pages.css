@@ -133,6 +133,13 @@
     list-style: none;
 }
 
+.home-section1 li:before {
+    content: "\25b8";
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+}
+
 .home-section2 {
     min-height: 630px;
     background: transparent url("../media/gpaper_bg.jpg") no-repeat center top;
