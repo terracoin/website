@@ -28,6 +28,20 @@ layout: team
                     <div class="frame">
                         <img src="{{ member_image | prepend: site.url }}" alt="{{ member.mattermost }}">
                     </div>
+                    <div>
+    {% if member.mattermost %}
+                        <a target="blank_" href="https://mattermost.terracoin.io/"><i class="fa fa-comments" title="{{ page.mattermost | append: ' @' | append: member.mattermost }}"></i></a>
+    {% endif %}
+    {% if member.twitter %}
+                        <a target="blank_" href="https://twitter.com/{{ member.twitter }}"><i class="fab fa-twitter-square" title="{{ page.twitter | append: ' @' | append: member.twitter }}"></i></a>
+    {% endif %}
+    {% if member.linkedin %}
+                        <a target="blank_" href="https://linkedin.com/in/{{ member.linkedin }}"><i class="fab fa-linkedin" title="{{ page.linkedin }}"></i></a>
+    {% endif %}
+    {% if member.github %}
+                        <a target="blank_" href="https://github.com/{{ member.github }}"><i class="fab fa-github-square" title="{{ page.github | append: ' @' | append: member.github }}"></i></a>
+    {% endif %}
+                    </div>
                     <div class="memberinfo">
                         <div class="membername">
                             <h4>{{ member.name }}</h4>
@@ -36,8 +50,6 @@ layout: team
                         <p class="membertitle">{{ page.foundation_member }}<p>
     {% endif %}
                         <p class="membertitle">{{ member.position }}</p>
-                        <br>
-                        <p>{{ page.mattermost }} - @{{ member.mattermost }}</p>
                     </div>
                 </div>
             </div>
@@ -64,6 +76,20 @@ layout: team
                     <div class="frame">
                         <img src="{{ member_image | prepend: site.url }}" alt="{{ member.mattermost }}">
                     </div>
+                    <div>
+    {% if member.mattermost %}
+                        <a target="blank_" href="https://mattermost.terracoin.io/"><i class="fa fa-comments" title="{{ page.mattermost | append: ' @' | append: member.mattermost }}"></i></a>
+    {% endif %}
+    {% if member.twitter %}
+                        <a target="blank_" href="https://twitter.com/{{ member.twitter }}"><i class="fab fa-twitter-square" title="{{ page.twitter | append: ' @' | append: member.twitter }}"></i></a>
+    {% endif %}
+    {% if member.linkedin %}
+                        <a target="blank_" href="https://linkedin.com/in/{{ member.linkedin }}"><i class="fab fa-linkedin" title="{{ page.linkedin }}"></i></a>
+    {% endif %}
+    {% if member.github %}
+                        <a target="blank_" href="https://github.com/{{ member.github }}"><i class="fab fa-github-square" title="{{ page.github | append: ' @' | append: member.github }}"></i></a>
+    {% endif %}
+                    </div>
                     <div class="memberinfo">
                         <div class="membername">
                             <h4>{{ member.name }}</h4>
@@ -72,8 +98,6 @@ layout: team
                         <p class="membertitle">{{ page.foundation_member }}<p>
     {% endif %}
                         <p class="membertitle">{{ member.position }}</p>
-                        <br>
-                        <p>{{ page.mattermost }} - @{{ member.mattermost }}</p>
                     </div>
                 </div>
             </div>
