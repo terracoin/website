@@ -30,7 +30,7 @@
 }
 
 .sidenav .network-label:hover {
-    background: rgba(11, 198, 255, 0.8);
+    background: #0E8843;
     color: #fff;
     -webkit-transition: all .2s;
     -moz-transition: all .2s;
@@ -39,7 +39,7 @@
 }
 
 .network-label.twitter {
-    background: rgba(40, 180, 255, 0.8);
+    background: #13b559;
     color: #fff;
 }
 
@@ -80,7 +80,7 @@
 
 #twitterfeed {
     bottom: 278px;
-    background: rgba(29, 161, 242, 0.8);
+    background: #0E8843
 }
 
 #twitterfeed>div {
