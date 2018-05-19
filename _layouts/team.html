@@ -6,13 +6,12 @@ layout: team
 <div id="team" class="menu-anchor"></div>
 <div class="page-section team-section1">
     <h3>{{ page.team }}</h3>
+    <p class="subtext center">{{ page.team_subtext }}</p>
     <br>
     <br>
     <div class="center">
         <p class="small">{{ page.foundation_blurb }}</p>
     </div>
-    <br>
-    <br>
     <fieldset>
         <legend>{{ page.foundation }}</legend>
         <div class="center">
@@ -33,12 +32,12 @@ layout: team
                         <div class="membername">
                             <h4>{{ member.name }}</h4>
                         </div>
+    {% if member.foundation == 'yes' %}
+                        <p class="membertitle">{{ page.foundation_member }}<p>
+    {% endif %}
                         <p class="membertitle">{{ member.position }}</p>
                         <br>
                         <p>{{ page.mattermost }} - @{{ member.mattermost }}</p>
-    {% if member.twitter %}
-                        <p>{{ page.twitter }} - <a target="_blank" href="https://twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a></p>
-    {% endif %}
                     </div>
                 </div>
             </div>
@@ -69,12 +68,12 @@ layout: team
                         <div class="membername">
                             <h4>{{ member.name }}</h4>
                         </div>
+    {% if member.foundation == 'yes' %}
+                        <p class="membertitle">{{ page.foundation_member }}<p>
+    {% endif %}
                         <p class="membertitle">{{ member.position }}</p>
                         <br>
                         <p>{{ page.mattermost }} - @{{ member.mattermost }}</p>
-    {% if member.twitter %}
-                        <p>{{ page.twitter }} - <a target="_blank" href="https://twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a></p>
-    {% endif %}
                     </div>
                 </div>
             </div>
