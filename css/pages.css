@@ -23,7 +23,7 @@
     font-size: 25px;
     line-height: 30px;
     font-family: Trebuchet, Trebuchet MS, Tahoma, Arial, sans-serif;
-    min-height: 630px;
+    min-height: 450px;
     background: -webkit-gradient(linear, center top, center bottom, from(#F2F4F5),color-stop(100%, #B7C1C7));
     background: -webkit-linear-gradient(top,#F2F4F5 ,#B7C1C7 100%);
     background: linear-gradient(to bottom,#F2F4F5 ,#B7C1C7 100%);
