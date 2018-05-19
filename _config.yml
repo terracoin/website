@@ -68,6 +68,11 @@ scrolldown:
   fr: Défiler vers le bas
   fi: Rullaa alas
 
+newsletter_blurb:
+  en: <p>Subscribe to our newsletter.</p><p>We do our best to bring great crypto content to our subscribers.</p>
+  fr:
+  fi:
+
 baseurl: ""
 trcver: 0.12.1
 
