@@ -1,15 +1,15 @@
 <footer class="site-footer group">
     <div class="clearfix center">
-        {{ site.newsletter_blurb[page.lang] }}
+        <p class="green">{{ site.newsletter_blurb[page.lang] }}</p>
     </div>
     <div class="clearfix">
         <div id="mc_embed_signup">
             <form action="//terracoin.us15.list-manage.com/subscribe/post?u=e669ffbd8230f2b0809677c3d&amp;id=297940d5ba" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
                 <div id="mc_embed_signup_scroll" class="center">
                     <div class="mc-field-group">
-                        <input type="email" value="" name="EMAIL" class="required email mce_inline_error" id="mce-EMAIL" placeholder="{{ site.newsletter_form_email[page.lang] }}" aria-required="true" aria-invalid="true">
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="{{ site.newsletter_form_email[page.lang] }}" aria-required="true" aria-invalid="true">
                         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                        <div for="mce-EMAIL" class="mce_inline_error">This field is required.</div>
+                        <div for="mce-EMAIL" class="mce_inline_error"></div>
                     </div>
                     <div id="mce-responses" class="clear">
                         <div class="response" id="mce-error-response" style="display:none"></div>
