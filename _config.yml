@@ -70,8 +70,8 @@ scrolldown:
 
 newsletter_blurb:
   en: Follow us on social media and subscribe to our newsletter for great crypto content.
-  fr:
-  fi:
+  fr: Suivez-nous sur les réseaux sociaux et abonnez-vous à notre newsletter pour un contenu crypto génial.
+  fi: Seuraa meitä sosiaalisessa mediassa ja tilaa uutiskirjeemme hyvää krypto-sisältöä varten.
 
 baseurl: ""
 trcver: 0.12.1
