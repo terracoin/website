@@ -702,9 +702,9 @@ a.large_green_btn:hover {
 }
 
 .team-section1 {
-    min-height: 750px;
-    background: transparent url("../media/foundation_bg.jpg") no-repeat center top;
-    background-size: cover;
+    min-height: 700px;
+    background: #282828 url("../media/foundation_bg.jpg") no-repeat center top;
+    background-size: auto 750px;
     color: #fff;
 }
 
