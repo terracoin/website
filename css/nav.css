@@ -1,8 +1,8 @@
 .network-label {
     top: 0;
-    right: -56px;
+    right: -100%;
     height: 100%;
-    width: 95px;
+    width: auto;
     text-align: left;
     padding: 0 10px;
     position: absolute;
