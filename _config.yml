@@ -58,10 +58,10 @@ newsletter_form_email:
   fr: votre email
   fi: sähköpostisi
 
-newsletter_form_enroll:
-  en: Enroll
-  fr: Inscrire
-  fi: Osallistu
+newsletter:
+  en: Newsletter
+  fr: Bulletin
+  fi: Tiedote
 
 scrolldown:
   en: Scroll down
