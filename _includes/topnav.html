@@ -43,8 +43,14 @@
 </div>
 
 
-<div id="twitterfeed" class="sidenav">
-    <a data-class="popup" class="network-label twitter" data-network="twitter" href="#">{{ site.news[page.lang] }}</a>
+<div id="chatfeed" class="sidenav">
+    <a data-class="popup" class="network-label chat" target="_blank" href="https://mattermost.terracoin.io/">{{ site.chat[page.lang] }}</a>
+    <div>
+        <i class="fa mm-mattermost fa-2x"></i>
+    </div>
+</div>
+<div id="newsfeed" class="sidenav">
+    <a data-class="popup" class="network-label news" href="#">{{ site.news[page.lang] }}</a>
     <div>
         <i class="fa fa-rss fa-2x"></i>
     </div>
