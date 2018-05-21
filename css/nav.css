@@ -134,7 +134,9 @@
 
 #widgetpane #twitterpane {
     height: 100%;
-    width: 30%;
+    min-width: 400px;
+    width: 50%;
+    max-width: 1000px;
     position: absolute;
     top: 0px;
     overflow: hidden;
