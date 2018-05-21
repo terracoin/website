@@ -36,7 +36,17 @@ $(document).ready(function() {
         return false;
     });
 
-    $('#widgetpane, #twitterfeed, .network-label').on('click', function(e) {
+    $('#chatfeed').on('click', function(e) {
+        e.stopPropagation();
+
+	var url = $(this).find('.network-label').attr('href');
+
+	window.open(url, "_blank");
+
+	return false;
+    });
+
+    $('#widgetpane, #newsfeed').on('click', function(e) {
         e.stopPropagation();
 
         $('#widgetpane').toggleClass('is-visible');
