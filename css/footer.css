@@ -156,10 +156,10 @@ footer .reddit {
     background-size: cover;
 }
 
-footer .fb.social_btn:hover {
+footer .facebook.social_btn:hover {
     border-color: #4C78BF;
 }
-footer .fb {
+footer .facebook {
     background: transparent url("../media/social/fb.svg") no-repeat center top;
     background-size: cover;
 }
