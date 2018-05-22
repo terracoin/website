@@ -26,10 +26,10 @@
     <div class="clearfix center">
        <div class="clearfix center" style="width: auto; display: inline-block;">
            {% for social in site.data.social %}
-           <a target="_blank" class="{{ social.class }} nonblock nontext museBGSize rounded-corners social_btn transition group" href="{{ social.url }}" data-sizepolicy="fluidWidthHeight" data-pintopage="page_fixedCenter"><div class="fluid_height_spacer"></div></a>
+	   <a target="_blank" class="{{ social.class }} social_btn group" href="{{ social.url }}" title="{{ social.class | capitalize }}"></a>
            {% endfor %}
         </div>
-        <div class="colelem" data-sizepolicy="fluidWidth" data-pintopage="page_fluidx">
+        <div class="colelem">
             <div class="copyright-container">
                 <span class="copyright-text">{{ site.copyright[page.lang] }}</span>
             </div>
