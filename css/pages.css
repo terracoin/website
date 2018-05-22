@@ -360,6 +360,10 @@
     background-position: left top;
 }
 
+.res_button:hover > div.trans_upcenter {
+    background-position: center bottom;
+}
+
 .resources-section1,
 .resources-section2,
 .resources-section3 {
