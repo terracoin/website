@@ -10,7 +10,7 @@ layout: resources
     <div class="center">
 {% for data in site.data.res_social %}
         <div class="res_button_container">
-            <a class="res_button" href="{{ data.url }}">
+            <a target="_blank" class="res_button" href="{{ data.url }}">
                 <div class="table {{ data.class }}" style="background-image: url({{ '/media/res_social/' | append: data.icon | prepend: site.url }});">
                     <div class="cell">
                         <p>{{ data.name }}</p>
@@ -33,7 +33,7 @@ layout: resources
     <div class="center">
 {% for data in site.data.res_news %}
         <div class="res_button_container">
-            <a class="res_button" href="{{ data.url }}">
+            <a target="_blank" class="res_button" href="{{ data.url }}">
                 <div class="table {{ data.class }}" style="background-image: url({{ '/media/res_social/' | append: data.icon | prepend: site.url }});">
                     <div class="cell">
                         <p>{{ data.name }}</p>
@@ -56,7 +56,7 @@ layout: resources
     <div class="center">
 {% for data in site.data.res_discussion %}
         <div class="res_button_container">
-            <a class="res_button" href="{{ data.url }}">
+            <a target="_blank" class="res_button" href="{{ data.url }}">
                 <div class="table {{ data.class }}" style="background-image: url({{ '/media/res_social/' | append: data.icon | prepend: site.url }});">
                     <div class="cell">
                         <p>{{ data.name }}</p>
