@@ -160,7 +160,7 @@ footer .facebook.social_btn:hover {
     border-color: #4C78BF;
 }
 footer .facebook {
-    background: transparent url("../media/social/fb.svg") no-repeat center top;
+    background: transparent url("../media/social/facebook.svg") no-repeat center top;
     background-size: cover;
 }
 
