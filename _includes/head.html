@@ -71,7 +71,9 @@
     {% assign count=0 %}
     {% assign hexitems="" %}
     {% for exchange in site.data.exchanges %}
-{% capture hexitems %}{{ hexitems }} {{ count }}:[ '<img alt="{{ exchange.icon }}" src="{{ site.url }}/media/exchanges/{{ exchange.icon }}.png">', '{{ exchange.url }}' ],{% endcapture %}
+      {% if exchange.icon %}
+        {% capture hexitems %}{{ hexitems }} {{ count }}:[ '<img alt="{{ exchange.icon }}" src="{{ site.url }}/media/exchanges/{{ exchange.icon }}.png">', '{{ exchange.url }}' ],{% endcapture %}
+      {% endif %}
       {% assign count=count | plus: 1 %}
     {% endfor %}
     var hexitems = { {{ hexitems }} };
