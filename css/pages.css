@@ -502,6 +502,7 @@
     min-height: 73px;
     line-height: 72px;
     margin-top: 6px;
+    white-space: nowrap;
 }
 
 .vitals-section2 .vitals-live {

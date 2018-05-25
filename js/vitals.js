@@ -36,7 +36,7 @@ var updateVitals = function () {
 
         $('.totalmns').text(parseInt(data.totalmns));
         $('.enabledmns').text(parseInt(data.enabledmns));
-        var sbms = parseInt(data.nextsb) - parseInt(data.height) * 2.1 * 60 * 1000;
+        var sbms = (parseInt(data.nextsb) - parseInt(data.height)) * 2.1 * 60 * 1000;
         var nextsbstamp = new Date($.now() + sbms);
         $('.sbdate').text(nextsbstamp.toLocaleDateString());
         $('.sbtime').text(nextsbstamp.toLocaleTimeString());
