@@ -45,6 +45,8 @@
   {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}{% for page in pages %}
   <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />{% endfor %}
   <link rel="alternate" type="application/rss+xml" title="{{ site.title[page.lang] }}" href="{{ site.feed[page.lang] | prepend: site.url | prepend: site.url }}">
+  <!-- Godaddy trusted site -->
+  <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-110087859-1"></script>
