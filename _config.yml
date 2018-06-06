@@ -23,6 +23,11 @@ copyright:
   fr: Droits d'auteur &copy; 2018 Terracoin
   fi: Tekijänoikeudet &copy; 2018 Terracoin
 
+disclaimer:
+  en: <a href="/disclaimer/"><p>Disclaimer</p></a>
+  fr: <a href="/disclaimer/"><p>Disclaimer</p></a>
+  fi: <a href="/disclaimer/"><p>Disclaimer</p></a>
+
 index:
   en: /index.html
   fr: /accueil.html
@@ -63,11 +68,6 @@ newsletter:
   fr: Bulletin
   fi: Tiedote
 
-scrolldown:
-  en: Scroll down
-  fr: Défiler vers le bas
-  fi: Rullaa alas
-
 chat:
   en: Questions?
   fr: Questions?
@@ -84,7 +84,7 @@ newsletter_blurb:
   fi: Seuraa meitä sosiaalisessa mediassa ja tilaa uutiskirjeemme hyvää krypto-sisältöä varten.
 
 baseurl: ""
-trcver: 0.12.1
+trcver: 0.12.2
 
 url: "https://terracoin.io"
 

@@ -33,6 +33,7 @@
             <div class="copyright-container">
                 <span class="copyright-text">{{ site.copyright[page.lang] }}</span>
             </div>
+             - {{ site.disclaimer[page.lang] }}
         </div>
     </div>
 </footer>
@@ -41,9 +42,6 @@
 {% include scrolldown.css %}
 </style>
 {% include scrolldown.html %}
-
-<script src="{{ "/js/menus.js" | prepend: site.url }}" type="text/javascript"></script>
-<script src="{{ "/js/headlines.js" | prepend: site.url }}" type="text/javascript"></script>
 
 <script type="text/javascript">
     var siteurl = '{{ site.url }}';

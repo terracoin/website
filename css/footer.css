@@ -209,13 +209,15 @@ footer .copyright-container {
     font-family: Trebuchet, Trebuchet MS, Tahoma, Arial, sans-serif;
     border-color: transparent;
     line-height: 22px;
+    display: inline-block;
 }
 
-footer .copyright-container a {
-    color: #000000;
+footer a, footer a:active, footer a:visited, footer a:link {
+    color: #fff;
     text-decoration: none;
+    display: inline-block;
 }
 
-footer .copyright-container a:hover {
+footer a:hover {
     color: #0E8843;
 }

@@ -11,6 +11,9 @@
         <nav class="MenuBar clearfix group" data-sizepolicy="fixed" data-pintopage="page_fluidx">
 {% assign pages=site.pages | where:"lang", page.lang | sort:"order" %}
 {% for my_page in pages %}
+    {% if my_page.order == 0 %}
+        {% continue %}
+    {% endif %}
     {% if my_page.title %}
         {% assign class = "" %}
         {% if page.url == my_page.url %}

@@ -68,6 +68,9 @@
   <script src="{{ "/js/vitals.js" | prepend: site.url }}" type="text/javascript"></script>
   <script src="https://code.highcharts.com/highcharts.js" type="text/javascript"></script>
   {% endif %}
+  <script src="{{ "/js/menus.js" | prepend: site.url }}" type="text/javascript"></script>
+  {% if page.ref != 'disclaimer' and page.ref != 'trcpay' %}
+  <script src="{{ "/js/headlines.js" | prepend: site.url }}" type="text/javascript"></script>
   <script type="text/javascript">
   {% if page.ref == 'exchanges' %}
     {% assign count=0 %}
@@ -84,6 +87,7 @@
   {% endif %}
     var headlines = [ {{ page.headlines }} ];
   </script>
+  {% endif %}
   <script type="text/javascript">
     $(document).ready(function() {
         $('a[title]').qtip({
