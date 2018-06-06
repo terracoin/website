@@ -1,4 +1,4 @@
-var $hexes = $('.unihex');
+var $hexes;
 var addHex = function(hex, label, url) {
     var $hex = $($hexes[hex]);
 	
@@ -18,6 +18,8 @@ var addHex = function(hex, label, url) {
 };
 
 $(document).ready(function() {
+    $hexes = $('.unihex');
+
     $.each(hexitems, function(i, item) {
         addHex(i, item[0], item[1]);
     });
