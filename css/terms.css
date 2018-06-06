@@ -1,0 +1,36 @@
+.terms-page {
+    margin-top: 80px;
+    color: #3E3E3E;
+    font-family: Trebuchet, Trebuchet MS, Tahoma, Arial, sans-serif;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.terms-page .subsection {
+    width: 80%;
+    margin: 0 auto 50px;
+}
+
+.terms-page h1 {
+    text-align: center;
+    min-height: 92px;
+    line-height: 72px;
+    font-size: 60px;
+    color: #3D3E3D;
+}
+
+.terms-page h3 {
+    font-size: 35px;
+    background-color: transparent;
+    border-color: #0E8843;
+    text-align: left;
+    min-height: 42px;
+    z-index: 3;
+    border-style: solid;
+    line-height: 42px;
+    margin-top: 13px;
+    position: relative;
+    border-width: 0px 0px 6px;
+    display: inline-block;
+    margin-bottom: 40px;
+}

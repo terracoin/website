@@ -39,6 +39,9 @@
   <link rel="stylesheet" href="{{ "/css/footer.css" | prepend: site.url }}">
   <link rel="stylesheet" href="{{ "/css/nav.css" | prepend: site.url }}">
   <link rel="stylesheet" href="{{ "/css/pages.css" | prepend: site.url }}">
+  {% if page.ref == 'disclaimer' %}
+  <link rel="stylesheet" href="{{ "/css/terms.css" | prepend: site.url }}">
+  {% endif %}
   <link rel="canonical" href="{{ site.index[page.lang] | replace:'index.html','' | prepend: site.url }}">
   {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}{% for post in posts %}
   <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" />{% endfor %}

@@ -38,10 +38,12 @@
     </div>
 </footer>
 
+{% if page.ref != 'disclaimer' %}
 <style>
 {% include scrolldown.css %}
 </style>
 {% include scrolldown.html %}
+{% endif %}
 
 <script type="text/javascript">
     var siteurl = '{{ site.url }}';
