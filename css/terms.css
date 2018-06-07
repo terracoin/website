@@ -10,6 +10,12 @@
     width: 80%;
     margin: 0 auto 50px;
 }
+.terms-page .title {
+    position: relative;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
 
 .terms-page h1 {
     text-align: center;
@@ -17,6 +23,29 @@
     line-height: 72px;
     font-size: 60px;
     color: #3D3E3D;
+    font-weight: normal;
+    position: relative;
+    display: inline-block;
+}
+
+.terms-page h1:before,
+.terms-page h1:after {
+    content: "";
+    position: absolute;
+    top: 0.6em;
+    width: 25vw;
+    height: 0;
+    border-top: 3px dotted #3D3E3D;
+}
+
+.terms-page h1:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.terms-page h1:after {
+    left: 100%;
+    margin-left: 15px;
 }
 
 .terms-page h3 {
