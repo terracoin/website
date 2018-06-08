@@ -1,0 +1,240 @@
+h1 {
+    color: #3D3E3D;
+    font-family: Trebuchet, Trebuchet MS, Tahoma, Arial, sans-serif;
+    line-height: 72px;
+    min-height: 90px;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+h3 {
+    border-bottom: 6px solid #0e8843;
+    padding-right: 1em;
+    color: #3E3E3E;
+    font-family: Trebuchet, Trebuchet MS, Tahoma, Arial, sans-serif;
+    font-size: 35px;
+    line-height: 42px;
+    min-height: 53px;
+    display: inline;
+    font-weight: normal;
+}
+
+#pagenav.trcpay {
+    position: relative;
+}
+
+.intro {
+    height: 70vh;
+    vertical-align: middle;
+    margin-top: 120px;
+}
+
+.intro .title {
+    display: inline-block;
+    width: 80%;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    border-top: 6px solid #fff;
+    border-bottom: 6px solid #fff;
+    background: transparent;
+    background: -moz-linear-gradient(left, rgba(61,62,61,0) 0%, rgba(61,62,61,0.6) 33%, rgba(61,62,61,0.6) 66%, rgba(61,62,61,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(61,62,61,0) 0%,rgba(61,62,61,0.6) 33%,rgba(61,62,61,0.6) 66%,rgba(61,62,61,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(61,62,61,0) 0%,rgba(61,62,61,0.6) 33%,rgba(61,62,61,0.6) 66%,rgba(61,62,61,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.intro .intro_blurb {
+    min-height: 65px;
+    line-height: 3vw;
+    color: #FFFFD5;
+    font-family: Trebuchet, Trebuchet MS, Tahoma, Arial, sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    padding: 0px;
+}
+
+.downloads {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.download {
+    display: inline-block;
+    background-color: #9E9E9E;
+    background-color: rgba(61,62,61,0.5);
+    width: 170px;
+    border-radius: 11px;
+    border-color: #F5F3E9;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Trebuchet, Trebuchet MS, Tahoma, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    min-height: 50px;
+    height: 50px;
+    color: #F5F3E9;
+    position: relative;
+    text-align: center;
+    padding: 10px 5px;
+    margin-bottom: 5px;
+    margin-right: 0.5vw;
+}
+
+.download:hover {
+    background: #000;
+}
+
+.download > div {
+    width: 75%;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.download > div:first-child {
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.icon.mac {
+	background: transparent url('../media/mac.svg') no-repeat bottom center;
+	background-size: contain;
+}
+
+.icon.playstore {
+	background: transparent url('../media/playstore.svg') no-repeat bottom center;
+	background-size: contain;
+}
+
+.icon.macos {
+	background: transparent url('../media/mac_os.svg') no-repeat bottom center;
+	background-size: contain;
+}
+
+.icon.windows {
+	background: transparent url('../media/microsoft.svg') no-repeat bottom center;
+	background-size: contain;
+}
+
+.icon.linux {
+	background: transparent url('../media/linux.svg') no-repeat bottom center;
+	background-size: contain;
+}
+
+.icon.chrome {
+	background: transparent url('../media/chrome.svg') no-repeat bottom center;
+	background-size: contain;
+}
+
+.pay img {
+    width: 100%;
+}
+
+.page-section .small {
+    width: 60%;
+}
+
+.trcpay-section1 .pay,
+.trcpay-section3 .pay {
+    width: 40%;
+    position: relative;
+    margin-right: -10000px;
+    left: 60%;
+}
+
+.trcpay-section2 .pay {
+    width: 40%;
+    position: relative;
+    margin-right: -10000px;
+    right: 0;
+}
+
+.trcpay-section2 .small {
+    position: relative;
+    left: 40%;
+}
+
+.trcpay-section4 .computer {
+    position: relative;
+    bottom: -300px;
+}
+
+.trcpay-section2 h3,
+.trcpay-section5 h3 {
+    padding: 0;
+    padding-left: 1em;
+}
+
+.trcpay-section2,
+.trcpay-section2 h3,
+.trcpay-section5,
+.trcpay-section5 h3 {
+    text-align: right;
+}
+
+.trcpay-section4 ul {
+    display: inline-block;
+}
+
+.trcpay-section4 li {
+    padding-bottom: 5px;
+}
+
+.trcpay-section4 {
+    min-height: 400px;
+    background: transparent url("../media/nasa.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: Trebuchet, "Trebuchet MS", Tahoma, Arial, sans-serif;
+    font-size: 35px;
+    line-height: 70px;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+.trcpay-section5 {
+    min-height: 280px;
+}
+
+.trcpay-section6 {
+    min-height: 70px;
+    background: #0E8843;
+    border-bottom: 2px solid #ccc;
+    color: #fff;
+    font-family: Trebuchet, "Trebuchet MS", Tahoma, Arial, sans-serif;
+    font-size: 25px;
+    line-height: 70px;
+    padding: 0;
+}
+
+.trcpay-section6 span {
+    padding-top: 4px;
+    letter-spacing: 8px;
+}
+
+.trcpay-section6 .button {
+    border-color: #787878;
+    background: -webkit-gradient(linear, center top, center bottom, from(#3D3E3D),color-stop(100%, #000000));
+    background: -webkit-linear-gradient(top,#3D3E3D ,#000000 100%);
+    background: linear-gradient(to bottom,#3D3E3D ,#000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF3D3E3D, endColorstr=#FF000000, GradientType=0);
+    letter-spacing: 3px;
+    height: 100%;
+    margin-left: 71%;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    margin-left: 50px;
+    padding: 0 50px;
+}
+
+.trcpay-section6 .button:hover {
+    background: -webkit-gradient(linear, center top, center bottom, from(#575757),color-stop(100%, #3D3E3D));
+    background: -webkit-linear-gradient(top,#575757 ,#3D3E3D 100%);
+    background: linear-gradient(to bottom,#575757 ,#3D3E3D 100%);
+    color: #0E8843;
+    /* text-shadow: 0px 0px 5px rgba(57,181,74,0.5),0px 0px 5px rgba(57,181,74,0.5); */
+}

@@ -38,7 +38,11 @@
   <link rel="stylesheet" href="{{ "/css/common.css" | prepend: site.url }}">
   <link rel="stylesheet" href="{{ "/css/footer.css" | prepend: site.url }}">
   <link rel="stylesheet" href="{{ "/css/nav.css" | prepend: site.url }}">
+  {% if page.ref == 'trcpay' %}
+  <link rel="stylesheet" href="{{ "/css/trcpay.css" | prepend: site.url }}">
+  {% else %}
   <link rel="stylesheet" href="{{ "/css/pages.css" | prepend: site.url }}">
+  {% endif %}
   {% if page.ref == 'disclaimer' %}
   <link rel="stylesheet" href="{{ "/css/terms.css" | prepend: site.url }}">
   {% endif %}

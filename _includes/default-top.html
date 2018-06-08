@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
 
-  {% include head.html %}
+{% include head.html %}
 
   <body style="zoom: 1;">
 
+{% if page.ref != 'trcpay' %}
     {% include pagenav.html %}
+{% endif %}

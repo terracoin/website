@@ -3,16 +3,96 @@ layout: trcpay
 ---
 {% include default-top.html %}
 
+<div id="pagenav" class="{{ page.bgclass }} page-section center">
+    <div class="intro">
+        <div class="title">
+            <img style="width: 80%; max-width: -webkit-max-content;" src="{{ '/media/trcpay_title.png' | prepend: site.url }}">
+            <div class="intro_blurb">
+                {{ page.intro }}
+            </div>
+        </div>
+    </div>
+    <div class="downloads center">
+{% for download in site.data.trcpay %}
+        <a href="{{ download.link }}">
+            <div class="download">
+                <div class="icon {{ download.icon }}"></div>
+                <div>
+                    {{ download.name }}
+                </div>
+            </div>
+        </a>
+{% endfor %}
+    </div>
+</div>
+
 <div id="multisig" class="menu-anchor"></div>
-<div class="page-section trcpay-section1">
+<div class="page-section clearfix trcpay-section1">
+    <div class="pay animated group">
+        <img alt="" src="{{ '/media/trcpay1.png' | prepend: site.url }}">
+    </div>
+    <h3>{{ page.secure_slogan }}</h3>
+    <h1>{{ page.secure_title }}</h1>
+    <br>
+    <div class="small">
+        {{ page.secure_blurb }}
+        <br>
+        <a class="large_green_btn scrollto" href="#pagenav">{{ page.getwallet }}</a>
+    </div>
 </div>
 
 <div id="setup" class="menu-anchor"></div>
-<div class="page-section trcpay-section2">
+<div class="page-section clearfix trcpay-section2">
+    <div class="pay animated group">
+        <img alt="" src="{{ '/media/trcpay2.png' | prepend: site.url }}">
+    </div>
+    <h3>{{ page.setup_slogan }}</h3>
+    <h1>{{ page.setup_title }}</h1>
+    <br>
+    <div class="small">
+        {{ page.setup_blurb }}
+        <br>
+        <a class="large_green_btn scrollto" href="#pagenav">{{ page.getwallet }}</a>
+    </div>
 </div>
 
 <div id="oss" class="menu-anchor"></div>
-<div class="page-section trcpay-section3">
+<div class="page-section clearfix trcpay-section3">
+    <h3>{{ page.oss_slogan }}</h3>
+    <h1>{{ page.oss_title }}</h1>
+    <div class="pay animated group">
+        <img alt="" src="{{ '/media/trcpay_peel.png' | prepend: site.url }}">
+    </div>
+    <br>
+    <div class="small">
+        {{ page.oss_blurb }}
+        <br>
+        <a class="large_green_btn scrollto" href="#pagenav">{{ page.getwallet }}</a>
+    </div>
+</div>
+
+<div id="features" class="menu-anchor"></div>
+<div class="page-section clearfix trcpay-section4">
+    <div class="computer group">
+        <img alt="" src="{{ '/media/trcpay_computer.png' | prepend: site.url }}">
+    </div>
+    <div>
+        <ul>
+            <li>{{ page.feature1 }}</li>
+            <li>{{ page.feature2 }}</li>
+            <li>{{ page.feature3 }}</li>
+            <li>{{ page.feature4 }}</li>
+        </ul>
+    </div>
+</div>
+
+<div class="page-section clearfix trcpay-section5">
+    <h3>{{ page.features_slogan }}</h3>
+    <h1>{{ page.features_title }}</h1>
+</div>
+
+<div class="page-section trcpay-section6 center">
+    <span>{{ page.features }}</span> <a class="button scrollto" href="#pagenav">{{ page.getwallet }}</a>
 </div>
 
 {% include default-bottom.html %}

@@ -314,6 +314,7 @@
     width: 100%;
     min-height: 100vh;
     background-size: cover;
+    background-attachment: fixed !important;
 }
 
 #pagenav.home {
@@ -339,6 +340,12 @@
 #pagenav.team {
     background: transparent url("../media/page_bg5.jpg") no-repeat left top;	
     background-size: cover;
+}
+
+#pagenav.trcpay {
+    background: transparent url("../media/trcpay_bg.jpg") no-repeat center top;	
+    background-size: cover;
+    min-height: 100vh;
 }
 
 #hexnav {

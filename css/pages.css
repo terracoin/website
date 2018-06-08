@@ -1,36 +1,3 @@
-.menu-anchor {
-    position: absolute;
-    margin-top: -95px;
-}
-
-.center {
-    text-align: center;
-    margin: auto;
-}
-
-.bottom {
-    vertical-align: bottom;
-}
-
-.small {
-    line-height: 24px;
-    font-size: 20px;
-}
-
-.page-section {
-    padding: 40px 15%;
-    color: #3E3E3E;
-    font-size: 25px;
-    line-height: 30px;
-    font-family: Trebuchet, Trebuchet MS, Tahoma, Arial, sans-serif;
-    min-height: 450px;
-    background: -webkit-gradient(linear, center top, center bottom, from(#F2F4F5),color-stop(100%, #B7C1C7));
-    background: -webkit-linear-gradient(top,#F2F4F5 ,#B7C1C7 100%);
-    background: linear-gradient(to bottom,#F2F4F5 ,#B7C1C7 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF2F4F5, endColorstr=#FFB7C1C7, GradientType=0);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF2F4F5', endColorstr='#FFB7C1C7', GradientType=0)";
-}
-
 .page-section h3 {
     font-size: 60px;
     line-height: 72px;
@@ -40,10 +7,6 @@
     backface-visibility: hidden;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-}
-
-#pagenav {
-    color: #fff;
 }
 
 #pagenav.home #pagenav_extra {
@@ -594,26 +557,6 @@
     -webkit-box-shadow: 0px 0px 7px -1px #030303;
     -moz-box-shadow: 0px 0px 7px -1px #030303;
     -o-box-shadow: 0px 0px 7px -1px #030303;
-}
-
-a.large_green_btn {
-    margin-top: 20px;
-    display: inline-block;
-    border: 2px solid #fff;
-    border-radius: 12px;
-    background-color: #0E8843;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    width: 200px;
-    font-size: 18px;
-    line-height: 50px;
-    letter-spacing: 1px;
-    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
-}
-
-a.large_green_btn:hover {
-    background-color: #13b559;
 }
 
 #pagenav.team .newsletter {
