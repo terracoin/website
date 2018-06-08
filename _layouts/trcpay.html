@@ -28,7 +28,7 @@ layout: trcpay
 
 <div id="multisig" class="menu-anchor"></div>
 <div class="page-section clearfix trcpay-section1">
-    <div class="pay animated group">
+    <div class="pay animated group animate-right">
         <img alt="" src="{{ '/media/trcpay1.png' | prepend: site.url }}">
     </div>
     <h3>{{ page.secure_slogan }}</h3>
@@ -43,7 +43,7 @@ layout: trcpay
 
 <div id="setup" class="menu-anchor"></div>
 <div class="page-section clearfix trcpay-section2">
-    <div class="pay animated group">
+    <div class="pay animated group animate-left">
         <img alt="" src="{{ '/media/trcpay2.png' | prepend: site.url }}">
     </div>
     <h3>{{ page.setup_slogan }}</h3>
@@ -58,7 +58,7 @@ layout: trcpay
 
 <div id="oss" class="menu-anchor"></div>
 <div class="page-section clearfix trcpay-section3">
-    <div class="pay animated group">
+    <div class="pay animated group animate-up">
         <img alt="" src="{{ '/media/trcpay_peel.png' | prepend: site.url }}">
     </div>
     <h3>{{ page.oss_slogan }}</h3>
@@ -96,3 +96,55 @@ layout: trcpay
 </div>
 
 {% include default-bottom.html %}
+
+<script type="text/javascript">
+(function($) {
+
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + ($t.height() / 2),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+    
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+    
+})(jQuery);
+
+$(document).ready(function() {
+  $('.pay').css('opacity', 0);
+
+  $(window).trigger('scroll');
+});
+
+$(window).scroll(function(event) {
+  $('.pay').each(function(i, el) {
+    var el = $(el);
+    if (el.visible(false)) {
+      if (el.hasClass('animate-up'))
+        el.addClass("fadeInUp"); 
+      else if (el.hasClass('animate-left'))
+        el.addClass("fadeInLeft"); 
+      else
+        el.addClass("fadeInRight"); 
+    } 
+  });
+});
+</script>
