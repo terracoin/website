@@ -128,7 +128,8 @@ h3 {
 	background-size: contain;
 }
 
-.pay img {
+.pay img,
+.computer img {
     width: 100%;
 }
 
@@ -156,9 +157,11 @@ h3 {
     left: 40%;
 }
 
-.trcpay-section4 .computer {
+.trcpay-section5 .computer {
     position: relative;
-    bottom: -300px;
+    bottom: 18vw;
+    width: 60%;
+    margin-right: -10000px;
 }
 
 .trcpay-section2 h3,
@@ -176,6 +179,8 @@ h3 {
 
 .trcpay-section4 ul {
     display: inline-block;
+    position: relative;
+    left: 60%;
 }
 
 .trcpay-section4 li {
@@ -183,7 +188,7 @@ h3 {
 }
 
 .trcpay-section4 {
-    min-height: 400px;
+    min-height: 450px;
     background: transparent url("../media/nasa.jpg") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
@@ -192,7 +197,6 @@ h3 {
     font-size: 35px;
     line-height: 70px;
     font-weight: bold;
-    padding-bottom: 0;
 }
 
 .trcpay-section5 {

@@ -58,11 +58,11 @@ layout: trcpay
 
 <div id="oss" class="menu-anchor"></div>
 <div class="page-section clearfix trcpay-section3">
-    <h3>{{ page.oss_slogan }}</h3>
-    <h1>{{ page.oss_title }}</h1>
     <div class="pay animated group">
         <img alt="" src="{{ '/media/trcpay_peel.png' | prepend: site.url }}">
     </div>
+    <h3>{{ page.oss_slogan }}</h3>
+    <h1>{{ page.oss_title }}</h1>
     <br>
     <div class="small">
         {{ page.oss_blurb }}
@@ -73,9 +73,6 @@ layout: trcpay
 
 <div id="features" class="menu-anchor"></div>
 <div class="page-section clearfix trcpay-section4">
-    <div class="computer group">
-        <img alt="" src="{{ '/media/trcpay_computer.png' | prepend: site.url }}">
-    </div>
     <div>
         <ul>
             <li>{{ page.feature1 }}</li>
@@ -86,7 +83,10 @@ layout: trcpay
     </div>
 </div>
 
-<div class="page-section clearfix trcpay-section5">
+<div class="page-section trcpay-section5">
+    <div class="computer group">
+        <img alt="" src="{{ '/media/trcpay_computer.png' | prepend: site.url }}">
+    </div>
     <h3>{{ page.features_slogan }}</h3>
     <h1>{{ page.features_title }}</h1>
 </div>
