@@ -346,6 +346,7 @@
     background: transparent url("../media/trcpay_bg.jpg") no-repeat center top;	
     background-size: cover;
     min-height: 100vh;
+    padding: 40px 10%;
 }
 
 #hexnav {
