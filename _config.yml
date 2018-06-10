@@ -8,6 +8,7 @@
 # Site settings
 title:
   en: Terracoin
+  es: Terracoin
   fr: Terracoin
   fi: Terracoin
 
@@ -15,71 +16,85 @@ email: support@terracoin.io
 
 description:
   en: Terracoin is a secure, innovative, flexible, and easy cryptocurrency.
+  es: Terracoin es una criptomoneda segura, innovadora y flexible.
   fr: Terracoin est une crypto-monnaie sécurisée, innovante, flexible et facile.
   fi: Terracoin on turvallinen, innovatiivinen, joustava ja helppo kryptovaluutta.
 
 copyright:
+  en: Copyright &copy; 2018 Terracoin
   en: Copyright &copy; 2018 Terracoin
   fr: Droits d'auteur &copy; 2018 Terracoin
   fi: Tekijänoikeudet &copy; 2018 Terracoin
 
 disclaimer:
   en: <a href="/disclaimer/"><p>Disclaimer</p></a>
+  es: <a href="/disclaimer/"><p>Descargo de Responsabilidad</p></a>
   fr: <a href="/disclaimer/"><p>Disclaimer</p></a>
   fi: <a href="/disclaimer/"><p>Disclaimer</p></a>
 
 index:
   en: /index.html
+  es: /index.html
   fr: /accueil.html
   fi: /indeksi.html
 
 feed:
   en: /feed.xml
+  es: /feed.xml
   fr: /flux.xml
   fi: /syotto.xml
 
 top:
   en: Top
+  es: Arriba
   fr: Haut
   fi: Ylin
 
 language:
   en: Language
+  es: Lenguaje
   fr: Langage
   fi: Kieli
 
 langs:
   en: English
+  es: Español
   fr: Français
   fi: Suomi
 
 newsletter_form_subscribe:
   en: Subscribe
+  es: Suscribirse
   fr: Souscrire
   fi: Tilaa
 
 newsletter_form_email:
   en: your email
+  es: tu email
   fr: votre email
   fi: sähköpostisi
 
 newsletter:
   en: Newsletter
+  es: Newsletter
   fr: Bulletin
   fi: Tiedote
 
 chat:
   en: Questions?
+  es: Preguntas?
   fr: Questions?
   fi: Kysymyksiä?
 
 news:
   en: News
+  es: Noticias
   fr: Nouvelles
   fi: Uutiset
 
 newsletter_blurb:
   en: Follow us on social media and subscribe to our newsletter for great crypto content.
+  es: Síganos en las redes sociales y suscríbase a nuestro boletín informativo para obtener un excelente contenido de criptomonedas.
   fr: Suivez-nous sur les réseaux sociaux et abonnez-vous à notre newsletter pour un contenu crypto génial.
   fi: Seuraa meitä sosiaalisessa mediassa ja tilaa uutiskirjeemme hyvää krypto-sisältöä varten.
 
