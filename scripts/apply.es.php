@@ -8,7 +8,7 @@ require_once('form_process.php');
 $form = array(
 	'subject' => 'Formulario del Equipo Enviado',
 	'heading' => 'Nuevo Formulario Enviado',
-	'success_redirect' => '/team/',
+	'success_redirect' => '/equipo/',
 	'resources' => array(
 		'checkbox_checked' => 'Checkeado',
 		'checkbox_unchecked' => 'Uncheckeado',
