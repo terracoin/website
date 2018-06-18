@@ -705,11 +705,11 @@
 
 .team-section1 .frame,
 .team-section2 .frame {
-    width: 188px;
+/*    width: 188px;
     height: 195px;
     padding: 14px 16px;
     background: transparent url("../media/frame.png") no-repeat center top;
-    margin: auto;
+    margin: auto;*/
 }
 
 .team-section1 .member_container,
@@ -729,6 +729,12 @@
 .team-section2 .member img {
     width: 146px;
     height: 146px;
+    border: 4px solid #eee;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .team-section1 .membername,
