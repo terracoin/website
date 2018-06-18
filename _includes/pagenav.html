@@ -1,5 +1,5 @@
 <div id="pagenav" class="{{ page.bgclass }}">
-    <div id="hexnav">
+    <div id="hexnav" class="clearfix">
         <div style="float: right;">
         <div class="hex-row">
             <div class="unihex"></div>
@@ -14,7 +14,13 @@
         </div>
         </div>
         <div id="headlines-spacer"></div>
-        <div style="float: left; position: absolute;">
+{% if page.ref == 'team2' %}
+    {% include newsletter.html %}
+{% endif %}
+{% if page.extra %}
+    <div id="pagenav_extra">{{ page.extra }}</div>
+{% endif %}
+        <div style="float: left;">
         <div class="hex-row">
             <div class="unihex"></div>
             <div class="unihex"></div>
@@ -28,12 +34,6 @@
         </div>
         </div>
     </div>
-{% if page.ref == 'team2' %}
-    {% include newsletter.html %}
-{% endif %}
-{% if page.extra %}
-    <div id="pagenav_extra">{{ page.extra }}</div>
-{% endif %}
 </div>
 
 <div id="headlines"></div>

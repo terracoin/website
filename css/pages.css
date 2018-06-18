@@ -406,6 +406,10 @@
     position: relative;
 }
 
+#pagenav.trc-vitals #pagenav_extra {
+    margin-top: 100px;
+}
+
 .vitals-ticker>div {
     min-width: 400px;
     max-width: 40%;
