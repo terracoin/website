@@ -84,12 +84,31 @@
     background-color: transparent;
     font-weight: bold;
     border-width: 0px;
-    color: #E3E3E3;
+    color: #3E3E3E;
     font-size: 30px;
     position: relative;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    text-shadow: 2px 2px 1px #3d3d3d;
+    text-shadow: 0px 0px 3px #e3e3e3;
+}
+
+.home-section1 .titlewhat {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.25em;
+    /* text-decoration: underline; */
+    font-family: Arial Narrow, Arial;
+    letter-spacing: -0.025em;
+}
+
+.home-section1 .terra {
+    color: #0e8843;
+    -webkit-text-decoration-color: #3e3e3e;
+    text-decoration-color: #3e3e3e;
+}
+
+.home-section1 .coin {
+    color: #3e3e3e;
+    -webkit-text-decoration-color: #0e8843;
+    text-decoration-color: #0e8843;
 }
 
 .home-section1 li {
