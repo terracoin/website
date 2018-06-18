@@ -16,6 +16,7 @@ footer p {
 
 footer p.green {
     color: #0E8843;
+    font-weight: bold;
 }
 
 footer #mc_embed_signup_scroll {
