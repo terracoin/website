@@ -99,7 +99,8 @@ newsletter_blurb:
   pt: Siga-nos nas redes sociais e subscreva o nosso Boletim de Notícias para um cripto conteúdo fantástico.
 
 baseurl: ""
-trcver: 0.12.2
+trcver: 0.12.2.3
+trcverbin: 0.12.2
 
 url: "https://terracoin.io"
 
