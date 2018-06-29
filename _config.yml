@@ -34,72 +34,84 @@ disclaimer:
   fr: <a href="/disclaimer/"><p>Disclaimer</p></a>
   fi: <a href="/disclaimer/"><p>Disclaimer</p></a>
   pt: <a href="/aviso-legal/"><p>Aviso Legal</p></a>
+  nl: <a href="/disclaimer-nl/"><p>Disclaimer</p></a>
 
 index:
   en: /index.html
   fr: /accueil.html
   fi: /indeksi.html
   pt: /inicio.html
+  nl: /inhoudsopgave.html
 
 feed:
   en: /feed.xml
   fr: /flux.xml
   fi: /syotto.xml
   pt: /feed-pt.xml
+  nl: /feed-nl.xml
 
 top:
   en: Top
   fr: Haut
   fi: Ylin
   pt: Topo
+  nl: Top
 
 language:
   en: Language
   fr: Langage
   fi: Kieli
   pt: Idioma
+  nl: Taal
 
 langs:
   en: English
   fr: Français
   fi: Suomi
   pt: Português
+  nl: Nederlands
 
 newsletter_form_subscribe:
   en: Subscribe
   fr: Souscrire
   fi: Tilaa
   pt: Subscrever
+  nl: Abonneren 
 
 newsletter_form_email:
   en: your email
   fr: votre email
   fi: sähköpostisi
   pt: o seu email
+  nl: uw email
 
 newsletter:
   en: Newsletter
   fr: Bulletin
   fi: Tiedote
   pt: Boletim de Notícias
+  nl: Nieuwsbrief
 
 chat:
   en: Questions?
   fr: Questions?
   fi: Kysymyksiä?
   pt: Questões?
+  nl: Vragen?
 
 news:
   en: News
   fr: Nouvelles
   fi: Uutiset
   pt: Noticias
+  nl: Nieuws
 
 newsletter_blurb:
   en: Follow us on social media and subscribe to our newsletter for great crypto content.
   fr: Suivez-nous sur les réseaux sociaux et abonnez-vous à notre newsletter pour un contenu crypto génial.
   fi: Seuraa meitä sosiaalisessa mediassa ja tilaa uutiskirjeemme hyvää krypto-sisältöä varten.
   pt: Siga-nos nas redes sociais e subscreva o nosso Boletim de Notícias para um cripto conteúdo fantástico.
+  nl: Volg ons op sociale media en abonneer je op onze nieuwsbrief voor geweldige crypto-content.
 
 baseurl: ""
 trcver: 0.12.2.3
