@@ -41,7 +41,7 @@ index:
   fr: /accueil.html
   fi: /indeksi.html
   pt: /inicio.html
-  nl: /inhoudsopgave.html
+  nl: /startpagina.html
 
 feed:
   en: /feed.xml
@@ -55,7 +55,7 @@ top:
   fr: Haut
   fi: Ylin
   pt: Topo
-  nl: Top
+  nl: Omhoog
 
 language:
   en: Language
@@ -111,7 +111,7 @@ newsletter_blurb:
   fr: Suivez-nous sur les réseaux sociaux et abonnez-vous à notre newsletter pour un contenu crypto génial.
   fi: Seuraa meitä sosiaalisessa mediassa ja tilaa uutiskirjeemme hyvää krypto-sisältöä varten.
   pt: Siga-nos nas redes sociais e subscreva o nosso Boletim de Notícias para um cripto conteúdo fantástico.
-  nl: Volg ons op sociale media en abonneer je op onze nieuwsbrief voor geweldige crypto-content.
+  nl: Volg ons op sociale media en abonneer op onze nieuwsbrief voor geweldige crypto-content.
 
 baseurl: ""
 trcver: 0.12.2.3
