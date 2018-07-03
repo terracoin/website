@@ -1,0 +1,5 @@
+---
+layout: none
+permalink: .htaccess
+---
+Redirect permanent /bin/terracoin-core-current/terracoin-LATEST-x86_64-linux-gnu.tar.gz /bin/terracoin-core-{{ site.trcver }}/terracoin-{{ site.trcverbin }}-x86_64-linux-gnu.tar.gz
