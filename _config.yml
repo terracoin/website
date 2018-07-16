@@ -37,11 +37,11 @@ disclaimer:
   nl: <a href="/disclaimer-nl/"><p>Disclaimer</p></a>
 
 index:
-  en: /index.html
-  fr: /accueil.html
-  fi: /indeksi.html
-  pt: /inicio.html
-  nl: /startpagina.html
+  en: /
+  fr: /accueil/
+  fi: /indeksi/
+  pt: /inicio/
+  nl: /startpagina/
 
 feed:
   en: /feed.xml
