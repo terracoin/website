@@ -9,11 +9,9 @@ Please make a Pull Request, make sure you translate all the .html files in the r
 example: French
 - Using github make a fork of https://github.com/terracoin/website/
 - clone your fork from github
-- mkdir directory in the base, ie: fr
-- copy *.html into fr
-- rename the files as needed and make sure to only use websafe charaters in the filenames, ie: index.html -> acceuil.html
-- modify all the lines in acceuil.html below the marked line, and after the first : (colon) on each line, if you require a colon in the text then entire line must be in single quotes. (Make sure the lang is set to the 2 character code, ie: fr)
-- NOTE: permalink is also the file name in slashes, ie: /accueil/
+- copy the directory `en` to your new lang, ie: `fr`
+- modify all the lines in the html below the marked line, and after the first : (colon) on each line, if you require a colon in the text then entire line must be in single quotes. (Make sure the lang is set to the 2 character code, ie: fr)
+- NOTE: permalink is also the file name in slashes, ie: `/fr/index.html`
 - NOTE: in index.html there is a link to exchanges, make sure to replace /exchanges/ with the version form your new language.
 - Make sure you do this for all htmls
 - run add the dir to your git repo, ie: `git add fr`
