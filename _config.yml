@@ -49,7 +49,7 @@ index:
   nl: /startpagina/
 
 feed:
-  en: /feed.xml
+  en: /en/feed.xml
   es: /es/feed.xml
   fr: /fr/feed.xml
   fi: /fi/syotto.xml
