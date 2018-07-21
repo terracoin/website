@@ -42,7 +42,7 @@ disclaimer:
 
 index:
   en: /
-  es: /inicio/
+  es: /es/
   fr: /fr/
   fi: /indeksi/
   pt: /inicio/
@@ -50,7 +50,7 @@ index:
 
 feed:
   en: /feed.xml
-  es: /feed-es.xml
+  es: /es/feed.xml
   fr: /fr/feed.xml
   fi: /syotto.xml
   pt: /feed-pt.xml
