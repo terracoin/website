@@ -30,7 +30,7 @@
 {% endfor %}
             <div class="LangBar">{{ site.language[page.lang] }}:
                 <select id="langselector">
-{% assign pages=site.pages | where:"ref", 'index' | sort: 'lang' %}
+{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
 {% for my_page in pages %}
     {% assign selected='' %}
     {% if page.lang == my_page.lang %}
