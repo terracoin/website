@@ -1,7 +1,7 @@
 icon,name,link
-mac,iOS App Store,
-playstore,Google Play,
-macos,macOS,
-windows,Windows,
-linux,Linux,
-chrome,Chrome Addon,
+mac,iOS App Store,https://itunes.apple.com/app/trcpay/id1403526136
+playstore,Google Play,https://play.google.com/store/apps/details?id=info.terracoin.trcpay&hl=en
+macos,macOS,https://terracoin.io/bin/trcpay-current/TRCpay.dmg
+windows,Windows,https://terracoin.io/bin/trcpay-current/TRCpay.exe
+linux,Linux,https://terracoin.io/bin/trcpay-current/TRCpay-linux.zip
+chrome,Chrome Addon,https://terracoin.io/bin/trcpay-current/trcpay-chrome-extension.zip

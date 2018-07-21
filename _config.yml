@@ -11,6 +11,8 @@ title:
   es: Terracoin
   fr: Terracoin
   fi: Terracoin
+  pt: Terracoin
+  nl: Terracoin
 
 email: support@terracoin.io
 
@@ -19,87 +21,116 @@ description:
   es: Terracoin es una criptomoneda segura, innovadora y flexible.
   fr: Terracoin est une crypto-monnaie sécurisée, innovante, flexible et facile.
   fi: Terracoin on turvallinen, innovatiivinen, joustava ja helppo kryptovaluutta.
+  pt: Terracoin é uma criptomoeda segura, inovadora, flexível e simples.
+  nl: Terracoin is een veilige, innovatieve, flexibele en eenvoudige cryptovaluta.
 
 copyright:
   en: Copyright &copy; 2018 Terracoin
   es: Copyright &copy; 2018 Terracoin
   fr: Droits d'auteur &copy; 2018 Terracoin
   fi: Tekijänoikeudet &copy; 2018 Terracoin
+  pt: Copyright &copy; 2018 Terracoin. Todos os direitos reservados.
+  nl: Auteursrechten &copy; 2018 Terracoin
 
 disclaimer:
   en: <a href="/disclaimer/"><p>Disclaimer</p></a>
   es: <a href="/disclaimer/"><p>Descargo de Responsabilidad</p></a>
   fr: <a href="/disclaimer/"><p>Disclaimer</p></a>
   fi: <a href="/disclaimer/"><p>Disclaimer</p></a>
+  pt: <a href="/aviso-legal/"><p>Aviso Legal</p></a>
+  nl: <a href="/disclaimer-nl/"><p>Disclaimer</p></a>
 
 index:
-  en: /index.html
-  es: /index.html
-  fr: /accueil.html
-  fi: /indeksi.html
+  en: /
+  es: /inicio/
+  fr: /accueil/
+  fi: /indeksi/
+  pt: /inicio/
+  nl: /startpagina/
 
 feed:
   en: /feed.xml
   es: /feed.xml
   fr: /flux.xml
   fi: /syotto.xml
+  pt: /feed-pt.xml
+  nl: /feed-nl.xml
 
 top:
   en: Top
   es: Arriba
   fr: Haut
   fi: Ylin
+  pt: Topo
+  nl: Top
 
 language:
   en: Language
   es: Lenguaje
   fr: Langage
   fi: Kieli
+  pt: Idioma
+  nl: Taal
 
 langs:
   en: English
   es: Español
   fr: Français
   fi: Suomi
+  pt: Português
+  nl: Nederlands
 
 newsletter_form_subscribe:
   en: Subscribe
   es: Suscribirse
   fr: Souscrire
   fi: Tilaa
+  pt: Subscrever
+  nl: Abonneren 
 
 newsletter_form_email:
   en: your email
   es: tu email
   fr: votre email
   fi: sähköpostisi
+  pt: o seu email
+  nl: uw email
 
 newsletter:
   en: Newsletter
   es: Newsletter
   fr: Bulletin
   fi: Tiedote
+  pt: Boletim de Notícias
+  nl: Nieuwsbrief
 
 chat:
   en: Questions?
   es: Preguntas?
   fr: Questions?
   fi: Kysymyksiä?
+  pt: Questões?
+  nl: Vragen?
 
 news:
   en: News
   es: Noticias
   fr: Nouvelles
   fi: Uutiset
+  pt: Noticias
+  nl: Nieuws
 
 newsletter_blurb:
   en: Follow us on social media and subscribe to our newsletter for great crypto content.
   es: Síganos en las redes sociales y suscríbase a nuestro boletín informativo para obtener un excelente contenido de criptomonedas.
   fr: Suivez-nous sur les réseaux sociaux et abonnez-vous à notre newsletter pour un contenu crypto génial.
   fi: Seuraa meitä sosiaalisessa mediassa ja tilaa uutiskirjeemme hyvää krypto-sisältöä varten.
+  pt: Siga-nos nas redes sociais e subscreva o nosso Boletim de Notícias para um cripto conteúdo fantástico.
+  nl: Volg ons op sociale media en abonneer op onze nieuwsbrief voor geweldige crypto-content.
 
 baseurl: ""
-trcver: 0.12.2
+trcver: 0.12.2.4
+trcverbin: 0.12.2
 
 url: "https://terracoin.io"
 

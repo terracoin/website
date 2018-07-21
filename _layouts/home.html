@@ -6,7 +6,7 @@ layout: home
 <div id="what" class="menu-anchor"></div>
 <div class="page-section home-section1">
     <div>
-        <h3>{{ page.what }} <img class="svg" alt="Terracoin" src="{{ site.url }}/media/terracoin_v2.png"></h3>
+        <h3>{{ page.what }}</h3>
         <p>{{ page.created }}</p>
         <ul>
 {% for point in page.points %}
@@ -113,18 +113,30 @@ layout: home
     <br>
     <div class="table">
         <div class="cell">
+          <p class="clearfix version">{{ page.currentcore }} <strong>{{ site.trcver }}</strong></p>
+	  <br>
           <p class="clearfix small">{{ page.downloads_blurb1 }}</p>
 	  <br>
 	  <p class="clearfix small">{{ page.downloads_blurb2 }}</p>
+	  <br>
+          <p class="clearfix small"><a target="_blank" href="https://terracoin.io/bin/terracoin-core-{{ site.trcver }}/">{{ page.other_platforms }}</a></p>
+          <br>
+          {% assign trcpaypage="/trcpay/" | append: site.url %}
+          {% assign pages=site.pages | where:"lang", page.lang %}
+          {% for my_page in pages %}
+              {% if my_page.ref == "trcpay" %}
+                  {% assign trcpaypage=my_page.url %}
+                  {% break %}
+              {% endif %}
+          {% endfor %}
+          <p class="clearfix small"><a href="{{ trcpaypage }}">{{ page.trcpay }}</a></p>
+	  <br>
         </div>
         <div class="cell downloadcontainer">
-            <a class="downloadbutton" id="button-win" href="https://terracoin.io/bin/terracoin-core-current/terracoin-{{ site.trcver }}-win64-setup-unsigned.exe" target="_blank"><div class="clearfix group downloadtitle"><p>{{ page.windows }}</p><p>{{ page.64bit }}</p></div></a>
-	    <a class="downloadbutton" id="button-lin" href="https://terracoin.io/bin/terracoin-core-current/terracoin-{{ site.trcver }}-x86_64-linux-gnu.tar.gz" target="_blank"><div class="clearfix group downloadtitle"><p>{{ page.linux }}</p><p>{{ page.64bit }}</p></div></a>
+            <a class="downloadbutton" id="button-win" href="https://terracoin.io/bin/terracoin-core-{{ site.trcver }}/terracoin-{{ site.trcverbin }}-win64-setup-unsigned.exe" target="_blank"><div class="clearfix group downloadtitle"><p>{{ page.windows }}</p><p>{{ page.64bit }}</p></div></a>
+	    <a class="downloadbutton" id="button-lin" href="https://terracoin.io/bin/terracoin-core-{{ site.trcver }}/terracoin-{{ site.trcverbin }}-x86_64-linux-gnu.tar.gz" target="_blank"><div class="clearfix group downloadtitle"><p>{{ page.linux }}</p><p>{{ page.64bit }}</p></div></a>
             <br>
-	    <a class="downloadbutton" id="button-mac" href="https://terracoin.io/bin/terracoin-core-current/terracoin-{{ site.trcver }}-osx-unsigned.dmg" target="_blank"><div class="clearfix group downloadtitle"><p>{{ page.osx }}</p><p>{{ page.osx_vers }}</p></div></a>
-            <div class="center" style="position: absolute; bottom: -1em; width: 100%;">
-                <p class="clearfix small"><a target="_blank" href="https://terracoin.io/bin/terracoin-core-current/">{{ page.other_platforms }}</a></p>
-            </div>
+	    <a class="downloadbutton" id="button-mac" href="https://terracoin.io/bin/terracoin-core-{{ site.trcver }}/terracoin-{{ site.trcverbin }}-osx-unsigned.dmg" target="_blank"><div class="clearfix group downloadtitle"><p>{{ page.osx }}</p><p>{{ page.osx_vers }}</p></div></a>
         </div>
     </div>
     <br>
