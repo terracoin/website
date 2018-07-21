@@ -50,7 +50,7 @@ index:
 
 feed:
   en: /feed.xml
-  es: /feed.xml
+  es: /feed-es.xml
   fr: /flux.xml
   fi: /syotto.xml
   pt: /feed-pt.xml
