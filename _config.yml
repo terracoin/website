@@ -44,7 +44,7 @@ index:
   en: /
   es: /es/
   fr: /fr/
-  fi: /indeksi/
+  fi: /fi/
   pt: /inicio/
   nl: /startpagina/
 
@@ -52,7 +52,7 @@ feed:
   en: /feed.xml
   es: /es/feed.xml
   fr: /fr/feed.xml
-  fi: /syotto.xml
+  fi: /fi/syotto.xml
   pt: /feed-pt.xml
   nl: /feed-nl.xml
 
