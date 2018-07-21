@@ -43,7 +43,7 @@ disclaimer:
 index:
   en: /
   es: /inicio/
-  fr: /accueil/
+  fr: /fr/
   fi: /indeksi/
   pt: /inicio/
   nl: /startpagina/
@@ -51,7 +51,7 @@ index:
 feed:
   en: /feed.xml
   es: /feed-es.xml
-  fr: /flux.xml
+  fr: /fr/feed.xml
   fi: /syotto.xml
   pt: /feed-pt.xml
   nl: /feed-nl.xml
