@@ -48,18 +48,24 @@ $(document).ready(function() {
 	return false;
     });
 
-    $('#widgetpane, #newsfeed').on('click', function(e) {
+    $('#widgetpane, #newsfeed, #videofeed').on('click', function(e) {
         e.stopPropagation();
 
         $('#widgetpane').toggleClass('is-visible');
-        if ($('#widgetpane').hasClass('is-visible'))
+        if ($('#widgetpane').hasClass('is-visible')) {
             $('body').css('overflow', 'hidden');
-        else
+            if (e.currentTarget.id == 'newsfeed')
+                $('#newspane').addClass('is-visible');
+            else if (e.currentTarget.id == 'videofeed')
+                $('#videopane').addClass('is-visible');
+	} else {
             $('body').css('overflow', 'initial');
+            $('.is-visible').removeClass('is-visible');
+	}
 
 	return false;
     });
-        
+ 
     $(window).on('scroll', function() {
         if ($(this).scrollTop() > 500)
             $('#totop').addClass('top-after');

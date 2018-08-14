@@ -37,12 +37,12 @@ copyright:
 
 disclaimer:
   en: <a href="/disclaimer/"><p>Disclaimer</p></a>
-  es: <a href="/disclaimer/"><p>Descargo de Responsabilidad</p></a>
+  es: <a href="/es/disclaimer.html"><p>Descargo de Responsabilidad</p></a>
   fr: <a href="/disclaimer/"><p>Disclaimer</p></a>
   fi: <a href="/disclaimer/"><p>Disclaimer</p></a>
-  pt: <a href="/aviso-legal/"><p>Aviso Legal</p></a>
-  nl: <a href="/disclaimer-nl/"><p>Disclaimer</p></a>
-  zh: <a href="/disclaimer/"><p>免责声明</p></a>
+  pt: <a href="/pt/aviso-legal.html"><p>Aviso Legal</p></a>
+  nl: <a href="/nl/disclaimer.html"><p>Disclaimer</p></a>
+  zh: <a href="/zh/免责声明"><p>免责声明</p></a>
 
 index:
   en: /
