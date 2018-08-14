@@ -22,7 +22,7 @@ $form = array(
 		'invalid_reCAPTCHA_private_key' => '无效的reCAPTCHA私钥。',
 		'invalid_reCAPTCHA2_private_key' => '无效的reCAPTCHA 2.0私钥。',
 		'invalid_reCAPTCHA2_server_response' => '无效的reCAPTCHA 2.0服务器响应。',
-		'invalid_field_type' => '未知字段类型\'%s\'.',
+		'invalid_field_type' => '未知字段类型\'%s\'。',
 		'invalid_form_config' => '字段\'%s\'配置无效。',
 		'unknown_method' => '未知服务器请求方法'
 	),
