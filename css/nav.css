@@ -179,6 +179,10 @@
     transition: transform 0.5s ease-in 0s;
 }
 
+#videopane {
+    text-align: right;
+}
+
 #widgetpane.is-visible #videopane.is-visible {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
