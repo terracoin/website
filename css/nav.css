@@ -180,9 +180,7 @@
 }
 
 #videopane {
-    text-align: right;
-    height: 100%;
-    overflow: auto;
+    text-align: center;
 }
 
 #widgetpane.is-visible #videopane.is-visible {
