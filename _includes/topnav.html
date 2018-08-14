@@ -28,7 +28,9 @@
             </div>
     {% endif %}
 {% endfor %}
-            <div class="LangBar">{{ site.language[page.lang] }}:
+            <div class="LangBar">
+	        <a target="_blank" href="https://zoom.us/j/132746954">Live Meet Aug 20th@7pm PDT</a>
+		{{ site.language[page.lang] }}:
                 <select id="langselector">
 {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
 {% for my_page in pages %}
@@ -36,11 +38,12 @@
     {% if page.lang == my_page.lang %}
         {% assign selected=' selected="selected"' %}
     {% endif %} 
-                <option data-lang="{{ my_page.lang }}" value="{{ my_page.url | prepend: site.url }}"{{ selected }}>
-                    {{ site.langs[my_page.lang] }}
-                </option>
+                    <option data-lang="{{ my_page.lang }}" value="{{ my_page.url | prepend: site.url }}"{{ selected }}>
+                        {{ site.langs[my_page.lang] }}
+                    </option>
 {% endfor %}
-            </select>
+                </select>
+	    </div>
         </nav>
     </div>
 </div>
