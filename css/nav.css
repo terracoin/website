@@ -39,6 +39,15 @@
     transition: all .2s;
 }
 
+.network-label.video {
+    background: #cc0000;
+    color: #fff;
+}
+
+.network-label.video:hover {
+    background: #ff0000;
+}
+
 .network-label.chat {
     background: #ddd019;
     color: #fff;
