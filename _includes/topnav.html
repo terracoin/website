@@ -28,7 +28,9 @@
             </div>
     {% endif %}
 {% endfor %}
-            <div class="LangBar">{{ site.language[page.lang] }}:
+            <div class="LangBar">
+	        <a target="_blank" href="https://zoom.us/j/132746954">Live Meet Aug 20th@7pm PDT</a>
+		{{ site.language[page.lang] }}:
                 <select id="langselector">
 {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
 {% for my_page in pages %}
@@ -36,16 +38,23 @@
     {% if page.lang == my_page.lang %}
         {% assign selected=' selected="selected"' %}
     {% endif %} 
-                <option data-lang="{{ my_page.lang }}" value="{{ my_page.url | prepend: site.url }}"{{ selected }}>
-                    {{ site.langs[my_page.lang] }}
-                </option>
+                    <option data-lang="{{ my_page.lang }}" value="{{ my_page.url | prepend: site.url }}"{{ selected }}>
+                        {{ site.langs[my_page.lang] }}
+                    </option>
 {% endfor %}
-            </select>
+                </select>
+	    </div>
         </nav>
     </div>
 </div>
 
 
+<div id="videofeed" class="sidenav">
+    <a data-class="popup" class="network-label video" href="#">Videos</a>
+    <div>
+        <i class="fab fa-youtube fa-2x"></i>
+    </div>
+</div>
 <div id="chatfeed" class="sidenav">
     <a data-class="popup" class="network-label chat" target="_blank" href="https://mattermost.terracoin.io/">{{ site.chat[page.lang] }}</a>
     <div>
@@ -68,7 +77,15 @@
 </a>
 
 <div id="widgetpane">
-    <div id="twitterpane">
+    <div id="twitterpane" class="widget">
         <a class="twitter-timeline" data-dnt="true" data-theme="dark" data-link-color="#0e8843" href="https://twitter.com/Terracoin_TRC?ref_src=twsrc%5Etfw"></a>
+    </div>
+    <div id="videopane" class="widget">
+        <br>
+	<br>
+        {% for video in site.data.videos %}
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ video.link }}?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+        <br>
+        {% endfor %}
     </div>
 </div>

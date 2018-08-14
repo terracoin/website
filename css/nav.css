@@ -39,6 +39,15 @@
     transition: all .2s;
 }
 
+.network-label.video {
+    background: #cc0000;
+    color: #fff;
+}
+
+.network-label.video:hover {
+    background: #ff0000;
+}
+
 .network-label.chat {
     background: #ddd019;
     color: #fff;
@@ -88,6 +97,16 @@
     top: -5px;
 }
 
+#videofeed {
+    bottom: 388px;
+    background: #FF0000
+}
+
+#videofeed>div {
+    position: relative;
+    top: 8px;
+}
+
 #chatfeed {
     bottom: 333px;
     background: #c2b616
@@ -132,7 +151,7 @@
     transition: visibility 0s, background 0.5s;
 }
 
-#widgetpane #twitterpane {
+#widgetpane .widget {
     height: 100%;
     min-width: 400px;
     width: 50%;
@@ -160,7 +179,23 @@
     transition: transform 0.5s ease-in 0s;
 }
 
-#widgetpane.is-visible #twitterpane {
+#videopane {
+    text-align: center;
+}
+
+#widgetpane.is-visible #videopane.is-visible {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 0.5s ease-out 0s;
+    -moz-transition: -moz-transform 0.5s ease-out 0s;
+    -o-transition: -o-transform 0.5s ease-out 0s;
+    transition: transform 0.5s ease-out 0s;
+}
+
+#widgetpane.is-visible #twitterpane.is-visible {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
