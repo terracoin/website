@@ -13,6 +13,7 @@ title:
   fi: Terracoin
   pt: Terracoin
   nl: Terracoin
+  zh: Terracoin
 
 email: support@terracoin.io
 
@@ -23,6 +24,7 @@ description:
   fi: Terracoin on turvallinen, innovatiivinen, joustava ja helppo kryptovaluutta.
   pt: Terracoin é uma criptomoeda segura, inovadora, flexível e simples.
   nl: Terracoin is een veilige, innovatieve, flexibele en eenvoudige cryptovaluta.
+  zh: Terracoin是一种安全，创新，灵活且易于使用的加密货币。
 
 copyright:
   en: Copyright &copy; 2018 Terracoin
@@ -31,6 +33,7 @@ copyright:
   fi: Tekijänoikeudet &copy; 2018 Terracoin
   pt: Copyright &copy; 2018 Terracoin. Todos os direitos reservados.
   nl: Auteursrechten &copy; 2018 Terracoin
+  zh: Copyright &copy; 2018 Terracoin
 
 disclaimer:
   en: <a href="/disclaimer/"><p>Disclaimer</p></a>
@@ -39,6 +42,7 @@ disclaimer:
   fi: <a href="/disclaimer/"><p>Disclaimer</p></a>
   pt: <a href="/aviso-legal/"><p>Aviso Legal</p></a>
   nl: <a href="/disclaimer-nl/"><p>Disclaimer</p></a>
+  zh: <a href="/disclaimer/"><p>免责声明</p></a>
 
 index:
   en: /
@@ -47,6 +51,7 @@ index:
   fi: /fi/
   pt: /pt/
   nl: /nl/
+  zh: /zh/
 
 feed:
   en: /en/feed.xml
@@ -55,6 +60,7 @@ feed:
   fi: /fi/syotto.xml
   pt: /pt/feed.xml
   nl: /nl/feed.xml
+  zh: /zh/feed.xml
 
 top:
   en: Top
@@ -63,6 +69,7 @@ top:
   fi: Ylin
   pt: Topo
   nl: Top
+  zh: 顶部
 
 language:
   en: Language
@@ -71,6 +78,7 @@ language:
   fi: Kieli
   pt: Idioma
   nl: Taal
+  zh: 语言
 
 langs:
   en: English
@@ -79,6 +87,7 @@ langs:
   fi: Suomi
   pt: Português
   nl: Nederlands
+  zh: 中文
 
 newsletter_form_subscribe:
   en: Subscribe
@@ -87,6 +96,7 @@ newsletter_form_subscribe:
   fi: Tilaa
   pt: Subscrever
   nl: Abonneren 
+  zh: 订阅
 
 newsletter_form_email:
   en: your email
@@ -95,6 +105,7 @@ newsletter_form_email:
   fi: sähköpostisi
   pt: o seu email
   nl: uw email
+  zh: 你的电子邮件地址
 
 newsletter:
   en: Newsletter
@@ -103,6 +114,7 @@ newsletter:
   fi: Tiedote
   pt: Boletim de Notícias
   nl: Nieuwsbrief
+  zh: 新闻邮件
 
 chat:
   en: Questions?
@@ -111,6 +123,7 @@ chat:
   fi: Kysymyksiä?
   pt: Questões?
   nl: Vragen?
+  zh: 问题？
 
 news:
   en: News
@@ -119,6 +132,7 @@ news:
   fi: Uutiset
   pt: Noticias
   nl: Nieuws
+  zh: 新闻
 
 newsletter_blurb:
   en: Follow us on social media and subscribe to our newsletter for great crypto content.
@@ -127,6 +141,7 @@ newsletter_blurb:
   fi: Seuraa meitä sosiaalisessa mediassa ja tilaa uutiskirjeemme hyvää krypto-sisältöä varten.
   pt: Siga-nos nas redes sociais e subscreva o nosso Boletim de Notícias para um cripto conteúdo fantástico.
   nl: Volg ons op sociale media en abonneer op onze nieuwsbrief voor geweldige crypto-content.
+  zh: 在社交媒体上关注我们，订阅我们的新闻邮件以获取精彩的加密货币相关内容。
 
 baseurl: ""
 trcver: 0.12.2.4
