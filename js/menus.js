@@ -48,6 +48,18 @@ $(document).ready(function() {
 	return false;
     });
 
+    $('#widgetpane, #videofeed').on('click', function(e) {
+        e.stopPropagation();
+
+        $('#widgetpane').toggleClass('is-visible');
+        if ($('#widgetpane').hasClass('is-visible'))
+            $('body').css('overflow', 'hidden');
+        else
+            $('body').css('overflow', 'initial');
+
+	return false;
+    });
+        
     $('#widgetpane, #newsfeed').on('click', function(e) {
         e.stopPropagation();
 

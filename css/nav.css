@@ -88,6 +88,16 @@
     top: -5px;
 }
 
+#videofeed {
+    bottom: 388px;
+    background: #FF0000
+}
+
+#videofeed>div {
+    position: relative;
+    top: 8px;
+}
+
 #chatfeed {
     bottom: 333px;
     background: #c2b616
