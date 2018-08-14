@@ -54,7 +54,10 @@ $(document).ready(function() {
         $('#widgetpane').toggleClass('is-visible');
         if ($('#widgetpane').hasClass('is-visible')) {
             $('body').css('overflow', 'hidden');
-            $(this).addClass('is-visible');
+            if (e.currentTarget.id == 'newsfeed')
+                $('#newspane').addClass('is-visible');
+            else if (e.currentTarget.id == 'videofeed')
+                $('#videopane').addClass('is-visible');
 	} else {
             $('body').css('overflow', 'initial');
             $('.is-visible').removeClass('is-visible');
