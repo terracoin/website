@@ -288,6 +288,7 @@
     top: 50px;
     right: 2.47%;
     background-color: transparent;
+    white-space: nowrap;
 }
 
 #topnav .MenuBar .MenuItemContainer {
