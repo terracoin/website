@@ -55,7 +55,7 @@ $(document).ready(function() {
         if ($('#widgetpane').hasClass('is-visible')) {
             $('body').css('overflow', 'hidden');
             if (e.currentTarget.id == 'newsfeed')
-                $('#newspane').addClass('is-visible');
+                $('#twitterpane').addClass('is-visible');
             else if (e.currentTarget.id == 'videofeed')
                 $('#videopane').addClass('is-visible');
 	} else {
