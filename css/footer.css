@@ -202,6 +202,14 @@ footer .medium {
     background-size: cover;
 }
 
+footer .linkedin.social_btn:hover {
+    border-color: #0077B5;
+}
+footer .linkedin {
+    background: transparent url("../media/social/linkedin.svg") no-repeat center top;
+    background-size: cover;
+}
+
 footer .copyright-container {
     background-color: transparent;
     font-size: 18px;
