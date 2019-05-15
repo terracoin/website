@@ -23,16 +23,9 @@ var updateVitals = function () {
         $('.volusd').text('$' + addCommas(parseInt(data.volusd)));
         $('.supply').text(addCommas(parseInt(parseInt(data.supply))) + ' TRC');
 
-        $('.cryptopia_vol').text('$' + addCommas(parseInt(data.cryptopia.volusd)));
-        $('.cryptopia_usd').text('$' + addCommas(parseFloat(data.cryptopia.trcusd).toFixed(4)));
-        $('.cryptopia_per').text(parseFloat(data.cryptopia.volper).toFixed(2) + '%');
-
         $('.coinexchange_vol').text('$' + addCommas(parseInt(data.coinexchange.volusd)));
         $('.coinexchange_usd').text('$' + addCommas(parseFloat(data.coinexchange.trcusd).toFixed(4)));
         $('.coinexchange_per').text(parseFloat(data.coinexchange.volper).toFixed(2) + '%');
-        $('.ccex_vol').text('$' + addCommas(parseInt(data.ccex.volusd)));
-        $('.ccex_usd').text('$' + addCommas(parseFloat(data.ccex.trcusd).toFixed(4)));
-        $('.ccex_per').text(parseFloat(data.ccex.volper).toFixed(2) + '%');
 
         $('.totalmns').text(parseInt(data.totalmns));
         $('.enabledmns').text(parseInt(data.enabledmns));
