@@ -19,7 +19,8 @@ layout: team
     {% assign member_image = '/media/members/nopic.jpg' %}
     {% assign static_images = site.static_files | where: 'extname', '.jpg' %}
     {% for static_image in static_images %}
-        {% if static_image.path contains member.mattermost | append: '.jpg' | prepend: '/media/members/' %}
+        {% assign test_member_image = '/media/members/' | append: member.mattermost | append: '.jpg' %}
+	{% if static_image.path == test_member_image %}
             {% assign member_image = static_image.path %}
         {% endif %}
     {% endfor %}
@@ -67,7 +68,8 @@ layout: team
     {% assign member_image = '/media/members/nopic.jpg' %}
     {% assign static_images = site.static_files | where: 'extname', '.jpg' %}
     {% for static_image in static_images %}
-        {% if static_image.path contains member.mattermost | append: '.jpg' | prepend: '/media/members/' %}
+        {% assign test_member_image = '/media/members/' | append: member.mattermost | append: '.jpg' %}
+	{% if static_image.path == test_member_image %}
             {% assign member_image = static_image.path %}
         {% endif %}
     {% endfor %}
@@ -137,7 +139,8 @@ layout: team
         <p class="small">{{ page.join_blurb }}</p>
         <br>
         <div class="center">
-		<form method="post" action="{{ '/scripts/apply' | append: {{ page.lang }} | append '.php' | prepend: site.url }}">
+		{% assign form_url = '/scripts/apply' | append: page.lang | append: '.php' | prepend: site.url %}
+		<form method="post" action="{{ form_url }}">
                 <input type="text" spellcheck="false" name="name" tabindex="1" placeholder="{{ page.join_form_name }}">
                 <input type="email" spellcheck="false" name="email" tabindex="2" placeholder="{{ page.join_form_email }}">
                 <textarea name="message" tabindex="3" placeholder="{{ page.join_form_message }}"></textarea>
