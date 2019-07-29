@@ -34,14 +34,22 @@
   <link href="{{ "/favicon.ico" | prepend: site.url }}" rel="shortcut icon" type="image/vnd.microsoft.icon">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  {% if page.ref == 'electrum' %}
+  <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ "/css/terracoin-electrum.style.css" | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ "/css/terracoin-electrum.theme.css" | prepend: site.url }}">
+  {% endif %}
   <link rel="stylesheet" href="{{ "/css/mattermost.css" | prepend: site.url }}">
+  {% if page.ref != 'electrum' %}
+  <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.url }}">
+  {% endif %}
   <link rel="stylesheet" href="{{ "/css/common.css" | prepend: site.url }}">
   <link rel="stylesheet" href="{{ "/css/footer.css" | prepend: site.url }}">
   <link rel="stylesheet" href="{{ "/css/nav.css" | prepend: site.url }}">
   {% if page.ref == 'trcpay' %}
   <link rel="stylesheet" href="{{ "/css/trcpay.css" | prepend: site.url }}">
-  {% else %}
-  <link rel="stylesheet" href="{{ "/css/pages.css" | prepend: site.url }}">
+  {% elsif page.ref != 'electrum' %}
+  <link rel="stylesheet" href="{{ "/css/page.css" | prepend: site.url }}">
   {% endif %}
   {% if page.ref == 'disclaimer' %}
   <link rel="stylesheet" href="{{ "/css/terms.css" | prepend: site.url }}">
