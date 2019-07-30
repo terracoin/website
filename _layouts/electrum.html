@@ -1,0 +1,182 @@
+---
+layout: electrum
+---
+{% include default-top.html %}
+
+<header id="pagenav" class="main-header">
+    <div class="container-fluid">
+        <!-- box-intro -->
+        <section class="box-intro bg-film" id="download_wallet">
+            <div class="table-cell">
+                <div class="section-title-parralax">
+			<img src="{{ '/media/terracoin-electrum.png' | prepend: site.url }}" width="300" alt="Logo">
+                    <div class="process-numbers elec">ELECTRUM</div>
+		    <b class="color-white">{{ page.blurb }}</b>
+                </div>
+		<a href="#download" class="scrollto download-button colorred">{{ page.download }}</a>
+		<a href="#features" class="scrollto download-button">{{ page.learn }}</a>
+		<a href="https://wiki.terracoin.io/view/Terracoin_Electrum_Wallet" target="_blank" class="download-button colorblue">{{ page.docs }}</a>
+            </div>
+        </section>
+        <!-- end box-intro -->
+    </div>
+</header>
+<section id="about" class="about mt-150 mb-50">
+    <div class="container">
+        <div class="row center">
+            <div class="col-md-8 col-md-offset-2 col-sm-12">
+                <div class="section-title-parralax">
+                    <div class="process-numbers">{{ page.wallet }}</div>
+                    <h2>{{ page.download }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-md-8 col-md-offset-2">
+                <p class="lead">{{ page.download_blurb1 }}</p>
+                <p>{{ page.download_blurb2 }}</p>
+                <p class="lead">{{ page.download_blurb3 }}</p>
+            </div>
+        </div>
+        <!-- description text -->
+    </div>
+</section>
+<!-- DOWNLOAD  -->
+<div id="download" class="facts mt-100 mbr-box mbr-section mbr-section--relative">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-xs-12 col-lg-3 col-md-3">
+                <div class="count-item download">
+			<img src="{{ '/media/windows-logo.png' | prepend: site.url }}" width="120" alt="Logo">
+                    <div class="numscroller">{{ page.windows }}</div>
+                    <div class="count-name-intro">{{ page.executable }}</div>
+                    <a href="https://terracoin.io/bin/electrum-current/Terracoin-Electrum-setup-win64.exe" class="download-name-button" download>{{ page.download }}</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-3 col-md-3">
+                <div class="count-item download">
+			<img src="{{ '/media/macos-logo.png' | prepend: site.url }}" width="120" alt="Logo">
+                    <div class="numscroller">{{ page.macos }}</div>
+                    <div class="count-name-intro">{{ page.executable }}</div>
+                    <a href="https://terracoin.io/bin/electrum-current/Terracoin-Electrum-macosx.dmg" class="download-name-button" download>{{ page.download }}</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-3 col-md-3">
+                <div class="count-item download">
+			<img src="{{ '/media/android-logo.png' | prepend: site.url }}" width="120" alt="Logo">
+                    <div class="numscroller">{{ page.android }}</div>
+                    <div class="count-name-intro">{{ page.apk }}</div>
+                    <a href="https://terracoin.io/bin/electrum-current/Terracoin-Electrum-release.apk" class="download-name-button" download>{{ page.download }}</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-3 col-md-3">
+                <div class="count-item download">
+			<img src="{{ '/media/linux-logo.png' | prepend: site.url }}" width="120" alt="Logo">
+                    <div class="numscroller">{{ page.linux }}</div>
+                    <div class="count-name-intro">{{ page.source }}</div>
+                    <a href="https://terracoin.io/bin/electrum-current/Terracoin-Electrumi.tar.gz" class="download-name-button" download>{{ page.download }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FEATURES -->
+<div id="features" class="features mbr-box mbr-section mbr-section--relative">
+    <div class="container">
+        <div class="row center">
+            <div class="col-md-8 col-md-offset-2 col-sm-12">
+                <div class="section-title-parralax">
+                    <div class="process-numbers">{{ page.light }}</div>
+                    <h2>{{ page.wallet }}</h2>
+                    <p class="module-subtitle">{{ page.feature_blurb }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="feature-item">
+                <div class="col-md-3 col-sm-6">
+                    <div class="item-head">
+                        <i class="fa fa-2x fa-fingerprint"></i>
+                    </div>
+                    <h6>{{ page.safe }}</h6>
+                    <p>{{ page.feature_safe }}</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="col-md-3 col-sm-6">
+                    <div class="item-head">
+                        <i class="fa fa-2x fa-power-off"></i>
+                    </div>
+                    <h6>{{ page.instant }}</h6>
+                    <p>{{ page.feature_instant }}</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="col-md-3 col-sm-6">
+                    <div class="item-head">
+                        <i class="fa fa-2x fa-user-lock"></i>
+                    </div>
+                    <h6>{{ page.nolockin }}</h6>
+                    <p>{{ page.feature_nolockin }}</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="col-md-3 col-sm-6">
+                    <div class="item-head">
+                        <i class="fa fa-2x fa-band-aid"></i>
+                    </div>
+                    <h6>{{ page.forgiving }}</h6>
+                    <p>{{ page.feature_forgiving }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="container">
+                <div class="flexslider">
+                    <ul class="slides">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="feature-item">
+                <div class="col-md-3 col-sm-6">
+                    <div class="item-head">
+                        <i class="fa fa-2x fa-archive"></i>
+                    </div>
+                    <h6>{{ page.cold }}</h6>
+                    <p>{{ page.feature_cold }}</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="col-md-3 col-sm-6">
+                    <div class="item-head">
+                        <i class="fa fa-2x fa-file-export"></i>
+                    </div>
+                    <h6>{{ page.open }}</h6>
+                    <p>{{ page.feature_open }}</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="col-md-3 col-sm-6">
+                    <div class="item-head">
+                        <i class="fa fa-2x fa-sitemap"></i>
+                    </div>
+                    <h6>{{ page.ubiquitous }}</h6>
+                    <p>{{ page.feature_ubiquitous }}</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="col-md-3 col-sm-6">
+                    <div class="item-head">
+                        <i class="fa fa-2x fa-rocket"></i>
+                    </div>
+                    <h6>{{ page.nodowntimes }}</h6>
+                    <p>{{ page.feature_nodowntimes }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include default-bottom.html %}
