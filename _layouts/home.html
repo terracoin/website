@@ -121,14 +121,21 @@ layout: home
 	  <br>
           <p class="clearfix small"><a target="_blank" href="https://terracoin.io/bin/terracoin-core-{{ site.trcver }}/">{{ page.other_platforms }}</a></p>
           <br>
+          {% assign electrumpage="/electrum/" | append: site.url %}
           {% assign trcpaypage="/trcpay/" | append: site.url %}
           {% assign pages=site.pages | where:"lang", page.lang %}
           {% for my_page in pages %}
+              {% if my_page.ref == "electrum" %}
+                  {% assign electrumpage=my_page.url %}
+                  {% break %}
+              {% endif %}
               {% if my_page.ref == "trcpay" %}
                   {% assign trcpaypage=my_page.url %}
                   {% break %}
               {% endif %}
           {% endfor %}
+          <p class="clearfix small"><a href="{{ electrumpage }}">{{ page.electrum }}</a></p>
+	  <br>
           <p class="clearfix small"><a href="{{ trcpaypage }}">{{ page.trcpay }}</a></p>
 	  <br>
         </div>
