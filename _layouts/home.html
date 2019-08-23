@@ -127,11 +127,9 @@ layout: home
           {% for my_page in pages %}
               {% if my_page.ref == "electrum" %}
                   {% assign electrumpage=my_page.url %}
-                  {% break %}
               {% endif %}
               {% if my_page.ref == "trcpay" %}
                   {% assign trcpaypage=my_page.url %}
-                  {% break %}
               {% endif %}
           {% endfor %}
           <p class="clearfix small"><a href="{{ electrumpage }}">{{ page.electrum }}</a></p>
