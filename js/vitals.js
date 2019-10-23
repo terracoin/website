@@ -23,10 +23,6 @@ var updateVitals = function () {
         $('.volusd').text('$' + addCommas(parseInt(data.volusd)));
         $('.supply').text(addCommas(parseInt(parseInt(data.supply))) + ' TRC');
 
-        $('.coinexchange_vol').text('$' + addCommas(parseInt(data.coinexchange.volusd)));
-        $('.coinexchange_usd').text('$' + addCommas(parseFloat(data.coinexchange.trcusd).toFixed(4)));
-        $('.coinexchange_per').text(parseFloat(data.coinexchange.volper).toFixed(2) + '%');
-        $('.coinexchange_pair').text(data.coinexchange.pair);
         $('.tradesatoshi_vol').text('$' + addCommas(parseInt(data.tradesatoshi.volusd)));
         $('.tradesatoshi_usd').text('$' + addCommas(parseFloat(data.tradesatoshi.trcusd).toFixed(4)));
         $('.tradesatoshi_per').text(parseFloat(data.tradesatoshi.volper).toFixed(2) + '%');
