@@ -23,10 +23,7 @@ var updateVitals = function () {
         $('.volusd').text('$' + addCommas(parseInt(data.volusd)));
         $('.supply').text(addCommas(parseInt(parseInt(data.supply))) + ' TRC');
 
-        $('.tradesatoshi_vol').text('$' + addCommas(parseInt(data.tradesatoshi.volusd)));
-        $('.tradesatoshi_usd').text('$' + addCommas(parseFloat(data.tradesatoshi.trcusd).toFixed(4)));
-        $('.tradesatoshi_per').text(parseFloat(data.tradesatoshi.volper).toFixed(2) + '%');
-        $('.tradesatoshi_pair').text(data.tradesatoshi.pair);
+	updateTickers(data.tickers);
 
         $('.totalmns').text(parseInt(data.totalmns));
         $('.enabledmns').text(parseInt(data.enabledmns));
@@ -303,6 +300,24 @@ Highcharts.chart('highcharts-graph', {
 
         setTimeout(updateGraph, 6000000);
     });
+}
+
+function updateTickers(tickers) {
+	var rows = '';
+	var counter = 0;
+	$.each(tickers, function(k, ticker) {
+		var market = ticker.market.name;
+		var vol = ticker.converted_volume.usd;
+		var usd = ticker.converted_last.usd;
+		var pair = ticker.base + '/' + ticker.target;
+
+		rows += '<tr><td><p>' + market + '</p></td><td><p>$' + addCommas(parseFloat(vol).toFixed(4)) + '</p></td><td><p>$' + addCommas(parseFloat(usd).toFixed(4)) + '</p></td><td><p>' + pair + '</p></td></tr>';
+		counter++;
+		if (counter >= 10)
+			return false;
+	});
+
+	$('.exchange_table table tbody').empty().append(rows);
 }
 
 $(document).ready(function() {
